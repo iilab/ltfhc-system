@@ -25,6 +25,14 @@ local-receive   /
 remote-send     /
 remote-receive  /
 
+
+system kirando
+call-login *
+call-password *
+time any
+phone 12301
+chat-timeout 120
+
 system nkasi
 call-login *
 call-password *
@@ -32,9 +40,23 @@ time any
 phone 12302
 chat-timeout 120
 
-system kirando
+system izinga
 call-login *
 call-password *
 time any
-phone 12301
+phone 12303
+chat-timeout 120
+
+system kazovu
+call-login *
+call-password *
+time any
+phone 12304
+chat-timeout 120
+
+system namansi
+call-login *
+call-password *
+time any
+phone 12305
 chat-timeout 120
