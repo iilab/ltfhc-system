@@ -7,9 +7,9 @@ iface lo inet loopback
 
 # The primary network interface
 auto wlan0
-iface wlan0 inet dhcp
-	wpa-ssid Wi-Fi Network
-	wpa-psk  11111111
+iface wlan0 inet static
+	address 192.168.42.1
+	netmask 255.255.255.0
 
 allow-hotplug eth1
 iface eth1 inet dhcp
