@@ -1,0 +1,7 @@
+- name: Install python
+  apt: pkg=$item state=installed
+  with_items:
+    - dnsmasq
+
+- name: Basic config
+  copy: src=etc_dnsmasq.conf dest=/etc/dnsmasq.conf
