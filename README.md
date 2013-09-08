@@ -11,3 +11,7 @@ Enable TRIM:
 
  - Add 'issue_discards = 1' to /etc/lvm/lvm.conf
  - Add cron job to /etc/cron.daily
+
+Install pythonstuff:
+
+ - pip install minimalmodbus
