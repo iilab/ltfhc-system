@@ -1,12 +1,17 @@
 #!/bin/bash
 
 # USAGE
-#   syncsqlite.sh SOURCEDB [DESTDIR]
+#   $0 SOURCEDB DESTHOST [DESTDIR]
 
 DEFAULTDEST=.
-HOST=$(hostname)
+HOST=$2
 
-if [ $HOST="nkasi" ]; then
+if [ $# -lt 2 ]; then
+	printf "Usage\n  $0 SOURCEDB DESTHOSTNAME [DESTDIR]"
+	exit 1
+fi
+
+if [ $HOST = "nkasi" ]; then
 	printf "Do not run this script on nkasi!"
 	exit 1
 fi
@@ -18,12 +23,13 @@ else
 	exit 1
 fi
 
-if [ $# -eq 2 ] && [ -d $2 ]; then
-	DESTDIR=$2
+if [ $# -eq 3 ] && [ -d $3 ]; then
+	DESTDIR=$3
 else
-	printf "Using default destination directory $DEFAULTDEST"
 	DESTDIR=$DEFAULTDEST
 fi
+
+printf "Using default destination directory $DESTDIR"
 
 head -1 $SOURCEDB | grep -q "SQLite format 3"
 CHECKEXIT=$?
@@ -34,7 +40,7 @@ if [ $CHECKEXIT != 0 ]; then
 fi
 
 BASEDIR=$(dirname $SOURCEDB)
-BASE=${SOURCEDB%.db}
+BASE=$(basename $SOURCEDB)
 
 ORIG=$DESTDIR/${BASE}-orig.sql
 NEW=$DESTDIR/${BASE}-$(date "+%s").sql
@@ -51,7 +57,7 @@ else
 	NOMORE=1
 fi
 
-sqlite3 ${SOURCEDB} ".dump" > ${DESTDIR}/${OUT}
+sqlite3 ${SOURCEDB} ".dump" > ${OUT}
 
 if [ ${NOMORE} -eq 1 ]; then
 	printf "Job Done"
@@ -59,10 +65,10 @@ if [ ${NOMORE} -eq 1 ]; then
 fi
 
 printf "Generating Patch"
-diff $ORIG $NEW > $PATCH
+diff -c $ORIG $NEW > $PATCH
 $OUT=$PATCH
 
-rm $PATCH
+rm $NEW
 
 printf "Queuing file transfer"
 
