@@ -60,21 +60,19 @@ fi
 sqlite3 ${SOURCEDB} ".dump" > ${OUT}
 
 if [ ${NOMORE} -eq 1 ]; then
-	printf "Job Done"
-	exit 0
+	printf "Generating Patch"
+	diff -c $ORIG $NEW > $PATCH
+	$OUT=$PATCH
+	rm $NEW
 fi
-
-printf "Generating Patch"
-diff -c $ORIG $NEW > $PATCH
-$OUT=$PATCH
-
-rm $NEW
 
 printf "Queuing file transfer"
 
 UUCPPATH="nkasi!$HOST!/usr/spool/uucppublic/$HOST/$OUT"
 
-uucp -r $OUT $UUCPPATH
+gzip -9 $OUT
+
+uucp -r $OUT.gz $UUCPPATH
 CHECKEXIT=$?
 
 if [ $CHECKEXIT != 0 ]; then

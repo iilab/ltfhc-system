@@ -25,6 +25,8 @@ DESTDB=$2
 
 if [ -e $3 ]; then
 	PATCH=$3
+	gunzip $PATCH
+	PATCH=${PATCH%.gz}
 else 
 	printf "$3 does not exist."
 	exit 1
