@@ -25,7 +25,7 @@ local-receive   /
 remote-send     /
 remote-receive  /
 
-system prod-tcp
+system ltfhc-prod
 call-login *
 call-password *
 time any
