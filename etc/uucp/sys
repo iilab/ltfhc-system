@@ -29,7 +29,7 @@ system prod-tcp
 call-login *
 call-password *
 time any
-address ltfhc-prod.hact.net
+address ltfhc-prod.vpn
 port TCP
 protocol t
 
