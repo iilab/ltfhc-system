@@ -68,7 +68,7 @@ fi
 
 printf "Queuing file transfer"
 
-UUCPPATH="nkasi!$HOST!/usr/spool/uucppublic/$HOST/$OUT"
+UUCPPATH="$HOST!/usr/spool/uucppublic/$HOST/$OUT"
 
 gzip -9 $OUT
 
