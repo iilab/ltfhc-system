@@ -25,6 +25,13 @@ local-receive   /
 remote-send     /
 remote-receive  /
 
+system prod-tcp
+call-login *
+call-password *
+time any
+address ltfhc-prod.hact.net
+port TCP
+protocol t
 
 system kirando
 call-login *
