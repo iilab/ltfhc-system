@@ -11,7 +11,7 @@
 #
 # First some defaults. These are for all other entries (unless overridden).
 #
-debug all
+#debug all
 
 protocol G
 protocol-parameter G packet-size 1024
