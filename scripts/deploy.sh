@@ -18,34 +18,34 @@ trap 'the_trap_handler ${LINENO} $?' ERR
 
 echo "*** Deployment started at $(date)" >> deploy.log 2>&1
 
-if [ -f 'ltfhc-deploy.tar.xz']; then
-
-	echo -n "Uncompressing deployment files..."
-	tar Jxvf ltfhc-deploy.tar.xz -C / >> deploy.log 2>&1
-	echo "Done"
-
-	echo "Installing startup scripts..."
-	ln -sf /home/ltfhc-deploy/etc/init.d/couchdb /etc/init.d/couchdb  >> deploy.log 2>&1
-	ln -sf /home/ltfhc-deploy/etc/default/couchdb /etc/default/couchdb  >> deploy.log 2>&1
-	ln -sf /home/ltfhc-deploy/etc/logrotate.d/couchdb /etc/logrotate.d/couchdb  >> deploy.log 2>&1
-	update-rc.d defaults couchdb  >> deploy.log 2>&1
-	echo "Done"
-
-	echo "Changing file permissions..."
-	useradd -d /home/ltfhc-deploy -s /bin/bash couchdb  >> deploy.log 2>&1
-	chown -R couchdb:couchdb /home/ltfhc-deploy/etc /home/ltfhc-deploy/var /home/ltdhc-deploy/share/couchdb  >> deploy.log 2>&1
-	echo "Done"
-
-	echo "Starting database..."
-	service couchdb startup >> deploy.log 2>&1
-	echo "Done"
-
-	echo "Installing application"
-	. /home/ltfhc-deploy/env.sh
-	cd /home/ltfhc-deploy/ltfhc-next 
-	kanso push http://localhost:5984 >> deploy.log 2>&1
-
-else
-	echo "The file ltfhc-deploy.tar.xz is not in this directory. Please download or move it here"
-	exit 1
+if [ ! -f ./ltfhc-deploy.tar.xz ]; then
+	echo "Retrieving deployment package..."
+	wget http://commondatastorage.googleapis.com/ltfhc%2Fltfhc-deploy.tar.xz
 fi
+
+echo -n "Uncompressing deployment files..."
+tar Jxf ltfhc-deploy.tar.xz -C / >> deploy.log 2>&1
+echo "Done"
+
+echo -n "Installing startup scripts..."
+ln -sf /home/ltfhc-deploy/etc/init.d/couchdb /etc/init.d/couchdb  >> deploy.log 2>&1
+ln -sf /home/ltfhc-deploy/etc/default/couchdb /etc/default/couchdb  >> deploy.log 2>&1
+ln -sf /home/ltfhc-deploy/etc/logrotate.d/couchdb /etc/logrotate.d/couchdb  >> deploy.log 2>&1
+update-rc.d couchdb defaults >> deploy.log 2>&1
+echo "Done"
+
+echo -n "Changing file permissions..."
+groupadd -f couchdb >> deploy.log 2>&1
+useradd -d /home/ltfhc-deploy -s /bin/bash -g couchdb couchdb  >> deploy.log 2>&1
+chown -R couchdb:couchdb /home/ltfhc-deploy/etc /home/ltfhc-deploy/var /home/ltfhc-deploy/share/couchdb  >> deploy.log 2>&1
+echo "Done"
+
+echo -n "Starting database..."
+service couchdb start >> deploy.log 2>&1
+echo "Done"
+
+echo -n "Installing application..."
+. /home/ltfhc-deploy/env.sh
+cd /home/ltfhc-deploy/ltfhc-next 
+kanso push http://deploy:chaiveisai9paifeich4ro0yohTiebie@localhost:5984/emr >> deploy.log 2>&1
+echo "Done."
