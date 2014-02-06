@@ -35,6 +35,11 @@ if [ ! -f ./*.bundle ]; then
 	exit 1
 fi
 
+if [ ! -f ./ltfhc-next.bundle ]; then
+	echo "ltfhc-next.bundle bundle not found. Place the ltfhc-next.bundle file in the directory where this script resides."
+	exit 1
+fi
+
 echo -n "Uncompressing deployment files..."
 tar Jxf ltfhc-deploy.tar.xz -C / >> deploy.log 2>&1
 echo "Done"
