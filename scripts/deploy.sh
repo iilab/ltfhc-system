@@ -79,3 +79,7 @@ git clone bundles/ltfhc-next.bundle >> deploy.log 2>&1
 cd /home/ltfhc-deploy/ltfhc-next
 kanso push http://deploy:chaiveisai9paifeich4ro0yohTiebie@localhost:5984/emr >> deploy.log 2>&1
 echo "Done."
+
+echo -n "6. Testing application..."
+curl -s http://deploy:chaiveisai9paifeich4ro0yohTiebie@localhost:5984/emr/_design/emr/_rewrite/|grep -i LTFHC >> deploy.log 2>&1
+echo "Done."
