@@ -16,6 +16,7 @@ function the_trap_handler()
 #
 trap 'the_trap_handler ${LINENO} $?' ERR
 
+# Automatically re-run under sudo if we aren't root.
 if [ $(id -u) != 0 ]; then
    echo "This script requires root permissions"
    sudo "$0"
@@ -24,44 +25,53 @@ fi
 
 echo "*** Deployment started at $(date)" >> deploy.log 2>&1
 
+# REQUIRED: This is the system baseline tarball that unpacks into /home/ltfhc-deploy
+# Includes dependencies to run the application:
+#	- Couchdb
+#	- NodeJS  
+#	- Kanso
+#	- Curl
+#	- Git (compiled with no HTTP support to remove external dependencies)
 if [ ! -f ./ltfhc-deploy.tar.xz ]; then
 	echo -n "Retrieving deployment package..."
 	wget http://commondatastorage.googleapis.com/ltfhc%2Fltfhc-deploy.tar.xz >> deploy.log 2>&1
 	echo "Done"
 fi
 
-if [ ! -f ./*.bundle ]; then
-	echo "No GIT bundles found. Place *.bundle files in the directory where this script resides."
-	exit 1
-fi
-
+# REQUIRED: The script clones the ltfhc-next.bundle into /home/ltfhc-deploy/ltfhc-next
 if [ ! -f ./ltfhc-next.bundle ]; then
 	echo "ltfhc-next.bundle bundle not found. Place the ltfhc-next.bundle file in the directory where this script resides."
 	exit 1
 fi
 
-echo -n "Uncompressing deployment files..."
+# OPTIONAL: The script copies any GIT bundles it finds into the /home/ltfhc-deploy/bundles directory
+if [ ! -f ./*.bundle ]; then
+	echo "No GIT bundles found. Place *.bundle files in the directory where this script resides."
+	exit 1
+fi
+
+echo -n "1. Uncompressing deployment files..."
 tar Jxf ltfhc-deploy.tar.xz -C / >> deploy.log 2>&1
 echo "Done"
 
-echo -n "Installing startup scripts..."
+echo -n "2. Installing startup scripts..."
 ln -sf /home/ltfhc-deploy/etc/init.d/couchdb /etc/init.d/couchdb  >> deploy.log 2>&1
 ln -sf /home/ltfhc-deploy/etc/default/couchdb /etc/default/couchdb  >> deploy.log 2>&1
 ln -sf /home/ltfhc-deploy/etc/logrotate.d/couchdb /etc/logrotate.d/couchdb  >> deploy.log 2>&1
 update-rc.d couchdb defaults >> deploy.log 2>&1
 echo "Done"
 
-echo -n "Changing file permissions..."
+echo -n "3. Changing file permissions..."
 groupadd -f couchdb >> deploy.log 2>&1
 useradd -d /home/ltfhc-deploy -s /bin/bash -g couchdb couchdb  >> deploy.log 2>&1
 chown -R couchdb:couchdb /home/ltfhc-deploy/etc /home/ltfhc-deploy/var /home/ltfhc-deploy/share/couchdb  >> deploy.log 2>&1
 echo "Done"
 
-echo -n "Starting database..."
+echo -n "4. Starting database..."
 service couchdb start >> deploy.log 2>&1
 echo "Done"
 
-echo -n "Installing application..."
+echo -n "5. Installing application..."
 cp *.bundle /home/ltfhc-deploy/bundles/
 . /home/ltfhc-deploy/env.sh >> deploy.log 2>&1
 cd /home/ltfhc-deploy/ 
