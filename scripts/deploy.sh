@@ -58,6 +58,9 @@ echo -n "2. Installing startup scripts..."
 ln -sf /home/ltfhc-deploy/etc/init.d/couchdb /etc/init.d/couchdb  >> deploy.log 2>&1
 ln -sf /home/ltfhc-deploy/etc/default/couchdb /etc/default/couchdb  >> deploy.log 2>&1
 ln -sf /home/ltfhc-deploy/etc/logrotate.d/couchdb /etc/logrotate.d/couchdb  >> deploy.log 2>&1
+ln -sf /home/ltfhc-deploy/etc/init/stunnel /etc/init/stunnel
+initctl reload-configuration
+initctl start stunnel
 update-rc.d couchdb defaults >> deploy.log 2>&1
 echo "Done"
 
@@ -83,3 +86,4 @@ echo "Done."
 echo -n "6. Testing application..."
 curl -s http://deploy:chaiveisai9paifeich4ro0yohTiebie@localhost:5984/emr/_design/emr/_rewrite/|grep -i LTFHC >> deploy.log 2>&1
 echo "Done."
+
