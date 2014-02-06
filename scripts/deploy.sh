@@ -19,8 +19,14 @@ trap 'the_trap_handler ${LINENO} $?' ERR
 echo "*** Deployment started at $(date)" >> deploy.log 2>&1
 
 if [ ! -f ./ltfhc-deploy.tar.xz ]; then
-	echo "Retrieving deployment package..."
-	wget http://commondatastorage.googleapis.com/ltfhc%2Fltfhc-deploy.tar.xz
+	echo -n "Retrieving deployment package..."
+	wget http://commondatastorage.googleapis.com/ltfhc%2Fltfhc-deploy.tar.xz >> deploy.log 2>&1
+	echo "Done"
+fi
+
+if [ ! -f ./*.bundle ]; then
+	echo "No GIT bundles found. Place *.bundle files in the directory where this script resides."
+	exit 1
 fi
 
 echo -n "Uncompressing deployment files..."
@@ -45,7 +51,10 @@ service couchdb start >> deploy.log 2>&1
 echo "Done"
 
 echo -n "Installing application..."
+cp *.bundle /home/ltfhc-deploy/bundles/
 . /home/ltfhc-deploy/env.sh
-cd /home/ltfhc-deploy/ltfhc-next 
+cd /home/ltfhc-deploy/ 
+git clone bundles/ltfhc-next.bundle >> deploy.log 2>&1
+cd /home/ltfhc-deploy/ltfhc-next
 kanso push http://deploy:chaiveisai9paifeich4ro0yohTiebie@localhost:5984/emr >> deploy.log 2>&1
 echo "Done."
