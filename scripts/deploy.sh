@@ -16,6 +16,12 @@ function the_trap_handler()
 #
 trap 'the_trap_handler ${LINENO} $?' ERR
 
+if [ $(id -u) != 0 ]; then
+   echo "This script requires root permissions"
+   sudo "$0"
+   exit
+fi
+
 echo "*** Deployment started at $(date)" >> deploy.log 2>&1
 
 if [ ! -f ./ltfhc-deploy.tar.xz ]; then
@@ -52,7 +58,7 @@ echo "Done"
 
 echo -n "Installing application..."
 cp *.bundle /home/ltfhc-deploy/bundles/
-. /home/ltfhc-deploy/env.sh
+. /home/ltfhc-deploy/env.sh >> deploy.log 2>&1
 cd /home/ltfhc-deploy/ 
 git clone bundles/ltfhc-next.bundle >> deploy.log 2>&1
 cd /home/ltfhc-deploy/ltfhc-next
