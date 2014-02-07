@@ -58,10 +58,11 @@ echo -n "2. Installing startup scripts..."
 ln -sf /home/ltfhc-deploy/etc/init.d/couchdb /etc/init.d/couchdb  >> deploy.log 2>&1
 ln -sf /home/ltfhc-deploy/etc/default/couchdb /etc/default/couchdb  >> deploy.log 2>&1
 ln -sf /home/ltfhc-deploy/etc/logrotate.d/couchdb /etc/logrotate.d/couchdb  >> deploy.log 2>&1
-ln -sf /home/ltfhc-deploy/etc/init/stunnel /etc/init/stunnel
-initctl reload-configuration
-initctl start stunnel
 update-rc.d couchdb defaults >> deploy.log 2>&1
+rm -f /etc/nginx/sites-enabled/* >> deploy.log 2>&1
+ln -sf /home/ltfhc-deploy/etc/nginx/health /etc/nginx/sites-enabled/health >> deploy.log 2>&1
+service nginx stop >> deploy.log 2>&1
+service nginx start >> deploy.log 2>&1
 echo "Done"
 
 echo -n "3. Changing file permissions..."
@@ -71,12 +72,19 @@ chown -R couchdb:couchdb /home/ltfhc-deploy/etc /home/ltfhc-deploy/var /home/ltf
 echo "Done"
 
 echo -n "4. Starting database..."
+# Configure CouchDB Redirect on root URL
 service couchdb start >> deploy.log 2>&1
+sleep 5
 echo "Done"
 
 echo -n "5. Installing application..."
-cp *.bundle /home/ltfhc-deploy/bundles/
+# Install default instance_settings
 . /home/ltfhc-deploy/env.sh >> deploy.log 2>&1
+# curl -X PUT http://deploy:chaiveisai9paifeich4ro0yohTiebie@localhost:5984/emr >> deploy.log 2>&1
+# curl -X POST -H "Content-Type: application/json" -d '{"_id":"_local/instance_settings","type":"prod","clinic":"'${HOSTNAME}'"}' http://deploy:chaiveisai9paifeich4ro0yohTiebie@localhost:5984/emr/ >> deploy.log 2>&1
+
+# Install database in correct place
+cp *.bundle /home/ltfhc-deploy/bundles/
 cd /home/ltfhc-deploy/ 
 git clone bundles/ltfhc-next.bundle >> deploy.log 2>&1
 cd /home/ltfhc-deploy/ltfhc-next
@@ -86,4 +94,14 @@ echo "Done."
 echo -n "6. Testing application..."
 curl -s http://deploy:chaiveisai9paifeich4ro0yohTiebie@localhost:5984/emr/_design/emr/_rewrite/|grep -i LTFHC >> deploy.log 2>&1
 echo "Done."
+
+echo -n "7. Bootstrapping replication..."
+cd /home/ltfhc-deploy/ltfhc-next/system/python-requests 
+python setup.py install >> deploy.log 2>&1
+/home/ltfhc-deploy/ltfhc-next/system/replication/bootstrap.py >> deploy.log 2>&1
+echo "Done."
+
+echo "System ready for testing in the browser at https://www.health/"
+
+exit 0
 
