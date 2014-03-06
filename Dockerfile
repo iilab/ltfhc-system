@@ -14,7 +14,8 @@ RUN apt-get install software-properties-common -y
 RUN apt-add-repository ppa:novacut/stable
 RUN apt-add-repository ppa:chris-lea/node.js
 RUN apt-get update
-RUN apt-get install nodejs supervisor ssl-cert couchdb nginx --force-yes -y
+RUN apt-get install git nodejs supervisor ssl-cert couchdb nginx --force-yes -y
+RUN npm install kanso -g
 
 # Run nginx in the foreground for supervisord
 RUN echo "daemon off;" >> /etc/nginx/nginx.conf
