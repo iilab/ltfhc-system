@@ -1,9 +1,0 @@
-- name: Install ifplugd
-  apt: pkg=$item state=installed
-  with_items:
-    - ifplugd
-
-- name: configure ifplugd
-  copy: src=etc_default_ifplugd dest=/etc/default/ifplugd owner=root group=root
-  notify:
-    - restart ifplugd

@@ -1,5 +1,0 @@
-- name: Install python
-  apt: pkg=$item state=installed
-  with_items:
-    - python-dev
-    - python-pip

@@ -1,1 +1,0 @@
-cmd_/home/lastmile/ltfhc-system/gobiserial-lm/qcserial.ko := ld -r -m elf_x86_64 -T /usr/src/linux-headers-3.8.0-26-generic/scripts/module-common.lds --build-id  -o /home/lastmile/ltfhc-system/gobiserial-lm/qcserial.ko /home/lastmile/ltfhc-system/gobiserial-lm/qcserial.o /home/lastmile/ltfhc-system/gobiserial-lm/qcserial.mod.o

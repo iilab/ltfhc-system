@@ -91,7 +91,7 @@ echo -n "5. Installing application..."
 # Install database in correct place
 cp *.bundle /home/ltfhc-deploy/bundles/
 cd /home/ltfhc-deploy/ 
-git clone bundles/ltfhc-next.deploy.bundle >> $SD/deploy.log 2>&1
+git clone bundles/ltfhc-next.deploy.bundle ltfhc-next >> $SD/deploy.log 2>&1
 cd /home/ltfhc-deploy/ltfhc-next
 kanso push http://deploy:chaiveisai9paifeich4ro0yohTiebie@localhost:5984/emr >> $SD/deploy.log 2>&1
 echo "Done."

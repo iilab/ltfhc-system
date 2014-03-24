@@ -1,5 +1,0 @@
-- name: restart dnsmasq
-  service: name=dnsmasq state=restarted
-
-- name: restart ifplugd
-  service: name=ifplugd state=restarted

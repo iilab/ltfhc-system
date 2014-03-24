@@ -1,2 +1,0 @@
-- name: configure network
-  copy: src=etc_network_interfaces dest=/etc/network/interfaces owner=root group=root
