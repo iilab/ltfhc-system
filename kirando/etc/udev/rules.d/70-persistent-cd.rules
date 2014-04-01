@@ -1,0 +1,12 @@
+# This file maintains persistent names for CD/DVD reader and writer devices.
+# See udev(7) for syntax.
+#
+# Entries are automatically added by the 75-cd-aliases-generator.rules
+# file; however you are also free to add your own entries provided you
+# add the ENV{GENERATED}=1 flag to your own rules as well.
+# Mass_Storage (pci-0000:00:10.4-usb-0:6:1.0-scsi-0:0:0:0)
+SUBSYSTEM=="block", ENV{ID_CDROM}=="?*", ENV{ID_SERIAL}=="HUAWEI_Mass_Storage-0:0", SYMLINK+="cdrom", ENV{GENERATED}="1"
+
+# USB_SCSI_CD-ROM (pci-0000:00:10.4-usb-0:1:1.0-scsi-0:0:0:0)
+SUBSYSTEM=="block", ENV{ID_CDROM}=="?*", ENV{ID_SERIAL}=="ZTE_USB_SCSI_CD-ROM_MF1900ZTED010000-0:0", SYMLINK+="cdrom1", ENV{GENERATED}="1"
+

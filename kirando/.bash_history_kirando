@@ -1,0 +1,2000 @@
+netkit-rcp copyright nkasi:
+sudo ufw status
+sudo apt-get remove xinetd
+ls
+more /etc/inetd.conf 
+sudo apt-get remove rsh-server 
+sudo apt-get install rsh-server
+rcp copyright nkasi:
+sudo apt-get remove rsh-client 
+-get autoremove
+sudo ap-get autoremove
+sudo apt-get autoremove
+rcp copyright nkasi:
+sudo apt-get install rsh-client 
+rcp
+rcp copyright nkasi:
+rcp copyright lastmile@nkasi:
+poff nkasi
+pon nkasi
+sudo tail -f /var/log/syslog
+miniterm.py --dtr=0 /dev/ttyS0
+miniterm.py --dtr=1 /dev/ttyS0
+miniterm.py --dtr=0 /dev/ttyS0
+pon nkasi
+sudo tail -f /var/log/syslog
+rcp copyright lastmile@nkasi:
+ls -l copyright 
+time rcp copyright lastmile@nkasi:
+ls
+cd
+ls
+cd /bin/
+ls -l
+vdir
+man vdir
+ls -l nano
+time rcp nano lastmile@nkasi:
+ls
+sudo vi /etc/ppp/peers/nkasi 
+poff nkasi
+
+pon nkasi
+sudo tail -f /var/log/syslog
+sudo vi /etc/ppp/peers/nkasi 
+miniterm.py --dtr=0 /dev/ttyS0
+ps aux
+pon nkasi
+sudo tail -f /var/log/syslog
+miniterm.py --dtr=0 /dev/ttyS0
+pon nkasi
+sudo tail -f /var/log/syslog
+pon nkasi
+sudo tail -f /var/log/syslog
+time rcp nano lastmile@nkasi:
+sudo vi /etc/ppp/peers/nkasi 
+sudo vi /etc/ppp/options 
+poff nkasi 
+sudo tail -f /var/log/syslog
+ps aux
+ps aux|grep ppp
+miniterm.py --dtr=0 /dev/ttyS0
+sudo vi /etc/ppp/options 
+pon nkasi
+sudo tail -f /var/log/syslog
+time rcp nano lastmile@nkasi:
+ping nkasi
+telnet
+telnet nkasi
+sudo vi /etc/ppp/options 
+sudo vi /etc/ppp/peers/nkasi 
+poff nkasi
+sudo tail -f /var/log/syslog
+miniterm.py --dtr=0 /dev/ttyS0
+pon nkasi
+sudo tail -f /var/log/syslog
+sudo vi /etc/ppp/peers/nkasi 
+poff nkasi
+sudo tail -f /var/log/syslog
+ls /etc/chatscripts/
+more /etc/chatscripts/gprs 
+more /etc/chatscripts/p
+more /etc/chatscripts/provider 
+chat -- \d+++\d\c OK ath0 OK
+pon nkasi
+sudo tail -f /var/log/syslog
+sudo vi /etc/ppp/peers/nkasi 
+sudo tail -f /var/log/syslog
+poff nkasi
+sudo tail -f /var/log/syslog
+pon nkasi
+sudo tail -f /var/log/syslog
+time rcp nano lastmile@nkasi:
+mkdir .ssh
+vi .ssh/authorized_keys
+more /etc/uucp/config 
+cd /etc/uucp/
+ls
+more sys 
+more call 
+ls
+more expire 
+ls
+more dial 
+ls
+more Poll 
+more port 
+man uucp
+man uucico
+man uuxqt
+more config 
+more sys 
+uucico -s nkasi
+sudo tail -f /var/log/syslog
+tail /var/log/uucp/Debug
+sudo tail -f /var/log/uucp/Debug
+sudo tail -f /var/log/uucp/Log
+sudo tail -f /var/log/uucp/Debug
+sudo tail -f /var/log/syslog
+ps aux
+ls
+vi sys 
+sudo vi call 
+uucico -s nkasi --debug all
+sudo tail -f /var/log/syslog
+sudo tail -f /var/log/uucp/Log
+sudo tail -f /var/log/uucp/Debug
+sudo vi call 
+ls
+cd
+ls
+git
+sudo apt-get install git
+3b9f376c09b6a1b86e0753b709743ee36ebbdfb1
+git clone https://github.com/iilab/ltfhc-forms.git@3b9f376c09b6a1b86e0753b709743ee36ebbdfb1
+git clone --help
+git fetch --help
+ls
+sudo tail -f /var/log/uucp/Debug
+ps aux
+cd /etc/mgetty/
+ls
+more mgetty.config 
+sudo vi mgetty.config 
+sudo vi login.config 
+sudo vi /etc/init/ttyS0.conf
+initctl
+initctl --help
+start ttyS0
+sudo start ttyS0
+ps aux
+sudo tail -f /var/log/uucp/Debug
+sudo tail -f /var/log/mgetty/mg_ttyS0.log 
+cd ../uucp/
+ls
+more sys 
+sudo vi sys
+ls
+more call 
+sudo tail -f /var/log/mgetty/mg_ttyS0.log 
+sudo tail -f /var/log/uucp/Debug
+date
+sudo tail -f /var/log/uucp/Debug
+rm /etc/issue.mgetty 
+sudo rm /etc/issue.mgetty 
+sudo tail -f /var/log/uucp/Debug
+sudo tail -f /var/log/mgetty/mg_ttyS0.log 
+ls
+cd /etc/mgetty/
+ls
+more mgetty.config 
+ls
+more login.config 
+cd ../uucp/
+ls
+more sys 
+sudo vi sys
+ls
+more port 
+ls
+more dial 
+sudo vi dial 
+ps aux
+sudo tail -f /var/log/mgetty/mg_ttyS0.log 
+dmesg
+sudo tail -f /var/log/mgetty/mg_ttyS0.log 
+sudo tail -f /var/log/uucp/Debug
+ls
+more passwd 
+ls -l passwd 
+sudo vi passwd 
+sudo chown uucp passwd 
+ls -al
+sudo chown uucp *
+sudo tail -f /var/log/uucp/Debug
+ls
+sudo vi sys 
+cd
+mkdir ltfhc-forms
+chmod 777 ltfhc-forms
+sudo tail -f /var/log/uucp/Debug
+ls -l /var/spool/uucppublic
+ls -ld /var/spool/uucppublic
+cd /etc/uucp/
+ls
+sudo vi sys
+sudo tail -f /var/log/uucp/Debug
+ls ~uucp/
+ls ~uucp/nkasi/
+ls ~uucp/nkasi/C./
+cd /var/spool/uucppublic/
+ls
+cd ../uucp
+ls
+cd nkasi/
+ls
+ls C./
+ls D./
+cd ../../uucppublic/
+ls
+ls /home/lastmile/ltfhc-forms/ltfhc-forms/ltfhc-forms.bundle
+ls
+find / ltfhc -name
+find / -name ltfhc
+sudo find / -name ltfhc
+ls
+sudo tail -f /var/log/uucp/Debug
+ls
+cd /var/spool/uucp
+ls
+cd /etc/uucp/
+ls
+sudo vi sys
+sudo tail -f /var/log/uucp/Debug
+ps aux
+sudo tail -f /var/log/uucp/Debug
+uustat -S
+uustat --all
+uustat --status
+sudo vi /etc/mgetty/mgetty.config 
+sudo vi /etc/mgetty/login.config 
+uulog --debuglog
+sudo uulog --debuglog
+sudo vi sys
+sudo tail -f /var/log/uucp/Debug
+sudo vi sys
+sudo tail -f /var/log/uucp/Debug
+cd /etc/ucc
+cd /etc/uucp/
+sudo vi sys
+sudo tail -f /var/log/mgetty/mg_ttyS0.log 
+sudo tail -f /var/log/uucp/Debug
+sudo vi /etc/uucp/sys
+sudo tail -f /var/log/uucp/Debug
+sudo vi /etc/uucp/sys
+sudo -u uucp /usr/lib/uucp/uuchk
+sudo tail -f /var/log/uucp/Debug
+cd /etc/uucp/
+sudo vi port 
+uustat -a
+uustat -q
+killall uucico
+ps aux
+sudo killall uucico
+ps aux
+sudo tail -f /var/log/uucp/Debug
+ls
+cd
+ls
+ls ltfhc-forms/
+ls ltfhc-forms/ltfhc-forms/
+ls -al ltfhc-forms/ltfhc-forms/
+ls
+sudo tail -f /var/log/uucp/Debug
+ls -l /tmp
+md5sum /tmp/nkasi.pcap 
+sudo vi /etc/uucp/sys 
+sudo tail -f /var/log/uucp/Debug
+sudo vi /etc/uucp/sys 
+sudo stop ttyS0
+miniterm.py --dtr=0 /dev/ttyS0
+sudo start ttyS0
+ls
+sudo tail -f /var/log/uucp/Debug
+ps aux
+ps aux|grep mge
+sudo tail -f /var/log/uucp/Debug
+sudo vi /etc/uucp/port 
+sudo stop ttyS0
+miniterm.py --dtr=0 /dev/ttyS0
+sudo start ttyS0
+sudo stop ttyS0
+miniterm.py --dtr=0 /dev/ttyS0
+sudo start ttyS0
+sudo tail -f /var/log/uucp/Debug
+sudo tail -f /var/log/mgetty/mg_ttyS0.log 
+sudo stop ttyS0
+miniterm.py --dtr=0 /dev/ttyS0
+sudo start ttyS0
+sudo tail -f /var/log/mgetty/mg_ttyS0.log 
+sudo tail -f /var/log/uucp/Debug
+sudo vi /etc/uucp/port 
+sudo vi /etc/uucp/sys
+sudo tail -f /var/log/uucp/Debug
+ls -l /tmp
+pon nkasi
+tail /var/log/syslog
+tail -f /var/log/syslog
+vi /etc/chatscripts/pap 
+cd /etc/ppp/peers/
+more nkasi 
+sudo vi /etc/chatscripts/pap 
+pon nkasi
+tail -f /var/log/syslog
+pon nkasi
+tail -f /var/log/syslog
+poff nkasi
+tail -f /var/log/syslog
+ls /var/lock/LCK..ttyS0'
+ls /var/lock/LCK..ttyS0
+ls -l /var/lock/LCK..ttyS0
+tail /var/log/mgetty/mg_ttyS0.log 
+lockfile-remove 
+lockfile-remove /var/lock/LCK..ttyS0'
+lockfile-remove /var/lock/LCK..ttyS0
+ls -l /var/lock/LCK..ttyS0
+tail /var/log/mgetty/mg_ttyS0.log 
+ls -l /var/lock/LCK..ttyS0
+lockfile-c
+lockfile-create 
+lockfile-create /var/lock/LCK..ttyS0
+ps aux|grep mge
+tail /var/log/mgetty/mg_ttyS0.log 
+miniterm.py --dtr=0 /dev/ttyS0
+tail /var/log/mgetty/mg_ttyS0.log 
+ls -l /var/lock/LCK..ttyS0
+man lockfile-create
+uurate 
+touch /var/lock/LCK..ttyS0
+ls -l /var/lock/LCK..ttyS0
+miniterm.py --dtr=0 /dev/ttyS0
+q
+sudo stop ttyS0
+sudo rm /var/lock/LCK..ttyS0
+tail /var/log/mgetty/mg_ttyS0.log 
+miniterm.py --dtr=0 /dev/ttyS0
+sudo starrt ttyS0
+sudo start ttyS0
+pon nkasi
+tail /var/log/mgetty/mg_ttyS0.log 
+tail -f /var/log/syslog
+ifconfig
+cd
+ls
+ls -l /tmp
+sudo tcpdump -vv -i ppp0 -s 65535 
+ifconfig
+tail -f /var/log/syslog
+ifconfig
+ping nkasi
+sudo vi /etc/ppp/peers/
+sudo tcpdump -vv -i ppp0 -s 65535 
+tail -f /var/log/syslog
+poff 
+tail -f /var/log/syslog
+sudo killall uucico
+uucico -s nkasi --debug all
+tail -f /var/log/syslog
+sudo tail -f /var/log/uucp/Debug
+sudo vi /etc/uucp/sys 
+ps aux|grep mge
+ps aux|grep muu
+ps aux|grep uu
+miniterm.py --dtr=0 /dev/ttyS0
+sudo tail -f /var/log/uucp/Debug
+miniterm.py --dtr=0 /dev/ttyS0
+sudo reboot
+ps aux|grep uu
+sudo tail -f /var/log/uucp/Debug
+uurate 
+sudo uurate
+more /var/log/uucp/Stats 
+date
+sudo tail -f /var/log/uucp/Debug
+ls /tmp
+ls -l /tmp
+md5sum /tmp/ltfhc-forms.bundle 
+dmesg
+cd ~uucp
+pwd
+ls
+sudo -u uucp mkdir incoming
+ls
+ls -al
+sudo chmod 777 incoming
+ls -l /tmp
+cd
+git clone -b master /tmp/ltfhc-forms.bundle 
+ls ltfhc-forms/
+rm -rf ltfhc-forms/
+git clone -b master /tmp/ltfhc-forms.bundle 
+cd ltfhc-forms/
+ls
+git status
+sudo tail -f /var/log/uucp/Debug
+ls -l ~uucp/incoming/
+ls ~
+sudo find / -name incoming
+ls /var/spool/uucppublic/u
+ls /var/spool/uucppublic/incoming 
+ls -l /var/spool/uucppublic/incoming
+cat /var/spool/uucppublic/incoming
+file /var/spool/uucppublic/incoming
+md5sum /var/spool/uucppublic/incoming
+ls
+vi .git/config 
+git pull
+lspci
+man if
+man bash
+more /etc/init.d/network
+more /etc/init.d/networking
+more /etc/uucp/sys 
+sudo apt-get install hostapd
+lspci -v
+lsusb
+lsmod
+lsusb -v 1410:a023
+lsusb -v -D 1410:a023
+sudo lsusb -v -D 1410:a023
+sudo lsusb -v -d 1410:a023
+sudo modprobe qcserial 
+sudo modprobe qcaux 
+lsmod
+dmes
+dmesg
+ifconfig
+tail /var/log/syslog
+ls /dev
+ls -ltr /dev
+date
+ls /dev/ttyU*
+ls /dev
+ls /dev/net
+lsmod
+dmesg
+ls /dev/
+sudo vi /etc/modules 
+sudo reboot
+ls /dev
+cd /etc
+ls
+sudo vi modules 
+lsmod
+cd /etc/modprobe.d/
+ls
+more blacklist
+more blacklist.conf 
+ls
+more blacklist-f
+more blacklist-firewire.conf 
+sudo vi blacklist-qcseria.conf
+sudo rmmod qcserial
+sudo rmmod qcaux
+lsmod
+dmesg
+ps aux
+ls
+cd
+ls
+git clone https://github.com/casastorta/gobiserial.git
+cd gobiserial/
+ls
+cd ..
+sudo apt-get install dkms 
+ls
+cd gobiserial/
+more README.md 
+cd GobiSerial/
+ls
+dkms add -m GobiSerial -v 2011-07-29-1026
+man dkms
+dkms add . -m GobiSerial -v 2011-07-29-1026
+dkms add . -m GobiSerial 
+cd ..
+dkms add -m GobiSerial -v 2011-07-29-1026
+cd GobiSerial/
+ls
+dkms add . -m GobiSerial 
+ls
+more dkms.conf 
+man dkms
+dkms add ./
+sudo dkms add ./
+sudo dkms build GobiSerial-2011-07-29-1026
+sudo dkms build GobiSerial/2011-07-29-1026
+sudo dkms install GobiSerial/2011-07-29-1026
+sudo modprobe GobiSerial debug 
+dmesg
+ls /dev
+tail /var/log/syslog
+lsmod
+
+sudo lsusb -v -d 1410:a023
+ls
+vi GobiSerial.c 
+fg
+sudo dkms add ./
+cd /usr/src/GobiSerial-2011-07-29-1026/
+ls
+sudo vi GobiSerial.c 
+sudo dkms build GobiSerial/2011-07-29-1026
+sudo dkms rebuild GobiSerial/2011-07-29-1026
+dkms
+dkms -h
+sudo dkms build --force GobiSerial/2011-07-29-1026
+sudo dkms --force build GobiSerial/2011-07-29-1026
+man dkms
+sudo dkms uninstall GobiSerial/2011-07-29-1026
+ls /usr/src
+sudo dkms build GobiSerial/2011-07-29-1026
+ls /usr/src/GobiSerial-2011-07-29-1026/
+dkms status
+man dkms
+sudo dkms uninstall GobiSerial/2011-07-29-1026
+man dkms
+sudo dkms build GobiSerial/2011-07-29-1026
+ls /etc/dkms/
+ls /etc/dkms/template-dkms-mkdeb/
+ls /etc/dkms/template-dkms-mkdeb/debian/
+ls /lib
+ls /lib/modules/
+
+dkms
+dkms status
+man dkms
+sudo dkms remove GobiSerial/2011-07-29-1026
+sudo dkms remove GobiSerial/2011-07-29-1026 --all
+dkms status
+sudo dkms build GobiSerial/2011-07-29-1026
+sudo dkms install GobiSerial/2011-07-29-1026
+sudo modprobe GobiSerial
+tail /var/log/syslog
+date
+sudo rmmod GobiSerial 
+sudo modprobe GobiSerial
+tail /var/log/syslog
+ls /etc/udev/
+ls /etc/udev/rules.d/
+ls /lib/udev/
+ls /lib/udev/rules.d/
+miniterm /dev/ttyUSB0
+miniterm.py --help
+miniterm.py -b 115200 /dev/ttyUSB0
+sudo rmmod GobiSerial 
+sudo modprobe GobiSerial debug=y
+tail /var/log/syslog
+dmesg
+miniterm.py -b 9600 /dev/ttyUSB1
+tail /var/log/syslog
+l
+more dkms.conf 
+screen -x
+screen
+ls
+cd gobiserial/
+ls
+cat .git/config o
+cd ..
+zip gobiserial/
+tar Jcvf gobiserial.tbz gobiserial
+ls
+cd /etc/default/
+ls
+sudo vi grub 
+info -f grub -n 'Simple configuration'
+sudo vi grub 
+sudo vi /etc/grub.d/00_header
+sudo vi grub 
+sudo update-grub2 
+sudo apt-get install iw
+iw phy
+iw phy phy0
+iw phy0 info
+wpa_supplicant --help
+man wpa_supplicant --help
+sudo pip install -U django-forms-builder
+ls
+cd /home
+ls
+cd lake
+ls
+cd lakesite
+python ./manage.py runserver
+python ./manage.py runserver kirando.hact.net:8000
+ifconfig
+python ./manage.py runserver 10.0.1.12:8000
+ls
+whoami
+ls -al
+cd ..
+ls
+whoami
+sudo chown -R lastmile:lastmile *
+cd lakesite/
+ls
+python ./manage.py runserver 10.0.1.12:8000
+vi lake/models.py
+git pull origin master
+rm lake.db
+git pull origin master
+python ./manage.py syncdb
+python ./manage.py runserver 10.0.1.12:8000
+cd ls
+ls
+cd /home/
+ls
+cd lake/
+ls
+cd lakesite/
+ls
+git pull origin master
+vi lakesite/settings.py
+ps aux
+tail /var/log/syslog
+tail /var/log/uucp/Debug
+sudo tail /var/log/uucp/Debug
+ls -l /var/spool/uucppublic/incoming 
+ls -l /var/spool/uucppublic/incoming.
+ls -l /var/spool/uucppublic/incoming/
+sudo tail /var/log/uucp/Debug
+sudo tail -f /var/log/uucp/Debug
+ls /var/spool/uucppublic/incoming 
+cd /var/spool/uucppublic/incoming
+ls
+ls -l ls
+ls -l /var/spool/uucppublic/incoming
+ps aux
+sudo apt-get install avahi
+sudo apt-get install avahi-daemon avahi-utils avahi-dnsconfd avahi-discover 
+sudo apt-get install avahi-daemon avahi-utils avahi-dnsconfd 
+sudo apt-get install avahi-autoipd 
+avahi-browse -alr
+cd /etc/avahi/
+ls
+ls services/
+more avahi-dnsconfd.action 
+ls
+more avahi-daemon.conf 
+sudo vi avahi-daemon.conf
+sudo service avahi-daemon start
+ls
+more avahi-autoipd.action 
+ls
+ps aux
+sudo apt-get install libnss-mdns
+iw
+iw wlan0
+iw phy wlan0
+iw phy wlan0 show
+iw phy wlan0 info
+iw phy info
+iw 
+iw list
+sudo apt-get install collectd
+sudo apt-get install collectd-core 
+sudo apt-get install collectd-core libsensors4 nginx
+sudo apt-get install collectd-core libsensors4 nginx openvpn lm-sensors
+sensors
+sensors-detect 
+sudo sensors-detect 
+sudo service kmod start
+sensors
+cd /etc/sensors.d/
+ls
+cd ../
+ls
+cd collectd/
+ls
+sudo vi collection.conf 
+ls /usr/lib/collectd/
+ls /usr/lib/collectd/utils/
+collectdmon 
+ls /usr/share/collectd/java/
+more /usr/share/collectd/postgresql_default.conf 
+ls /usr/share/doc/collectd-core/
+ls /usr/share/doc/collectd-core/examples/
+ls /usr/share/doc/collectd-core/examples/iptables/
+more /usr/share/doc/collectd-core/examples/iptables/accounting.sh 
+more /usr/share/doc/collectd-core/examples/network-proxy.py 
+more /usr/share/doc/collectd-core/examples/collectd_network.py 
+more /usr/share/doc/collectd-core/examples/collectd.conf 
+sudo apt-get install monit 
+cd /etc/monit/
+ls
+ls monitrc.d/
+ls templates/
+more monitrc
+sudo more monitrc
+sudo apt-get install smartmontools 
+smartctl 
+smartctl -h
+smartctl -a /dev/sda
+sudo smartctl -a /dev/sda
+sudo smartctl --scan
+sudo smartctl -a /dev/sda
+sudo smartctl -P showall
+sudo smartctl -a /dev/sda
+sudo smartctl -a /dev/sda|grep Temp
+sudo smartctl -a /dev/sda|grep -i Temp
+ls
+cd /etc/pm/
+ls
+cd sleep.d/
+ls
+cd ..
+pm
+pmap
+man pmap
+ps auxww
+ps aux
+sudo apt-get install sudo cp /usr/share/doc/openvpn/examples/sample-config-files/client.conf /etc/openvpn/
+sudo apt-get install openvpn
+sudo cp /usr/share/doc/openvpn/examples/sample-config-files/client.conf /etc/openvpn/
+ip addr
+cd /etc/openvpn/
+ls
+sudo tar zxvf ~/kirando.tar.gz 
+ls
+sudo vi client.conf 
+sudo tar zxvf ~/kirando.tar.gz 
+sudo service openvpn start
+ps aux
+tail /var/log/syslog
+ls
+ls -l
+more kirando.crt 
+ls
+sudo rm kirando.*
+sudo rm ta.key ca.crt 
+sudo tar xvf ~/kirando.tar
+sudo service openvpn start
+tail /var/log/syslog
+sudo vi client.conf 
+sudo service openvpn start
+tail /var/log/syslog
+sudo vi client.conf 
+sudo openvpn 
+sudo openvpn --config ./client.conf 
+sudo vi client.conf 
+tail /var/log/syslog
+sudo openvpn --config ./client.conf 
+ps aux
+ls
+sudo kill 17070
+ps aux
+sudo service openvpn start
+tail /var/log/syslog
+tail -f /var/log/syslog
+sudo service openvpn stop
+ls
+more ca.crt 
+openvpn 
+ls
+sudo rm ca.crt 
+sudo su -
+miniterm.py -b 9600 /dev/ttyUSB1
+miniterm.py -b 9600 /dev/ttyS0
+ls
+cd ltfhc-system/
+ls
+cd uucp/
+ls
+more sys 
+ping github.com
+more /etc/network/interfaces 
+ip addr
+ls -l /etc/uucp
+sudo cp * /etc/uucp
+sudo chown uucp:uucp /etc/uucp/*
+more sys 
+cd ..
+mkdir mgetty 
+cd mgetty/
+sudo cp /etc/mgetty/* .
+ls
+sudo chown lastmile:lastmile *
+ls
+more mgetty.config 
+ls
+more dialin.config 
+ls
+more login.config 
+git add .
+git commit -a -m "mgetty configs"
+git push
+ls
+cp /etc/init/ttyS0.conf .
+ls -al
+git add ttyS0.conf
+git commit -a -m "startup script for mgetty"
+git push
+ls
+cd
+cd ls
+ls
+ls -l
+uucp gobiserial.tbz izinga:/var/spool/uucppublic/gobiserial.tbz
+uucp --help
+man uucp
+uucp gobiserial.tbz izinga\!/var/spool/uucppublic/gobiserial.tbz
+ps aux
+tail -f /var/log/syslog
+tail -f /var/log/uucp/Debug
+sudo tail -f /var/log/uucp/Debug
+md5sum gobiserial
+md5sum gobiserial.tbz 
+sudo vi /etc/uucp/sys 
+uucp gobiserial.tbz izinga\!/var/spool/uucppublic/gobiserial.tbz
+sudo tail -f /var/log/uucp/Debug
+uuto
+uuto --help
+ls
+ls -l
+uuto kirando.tar.gz lastmile\!izinga
+uuto kirando.tar.gz izinga\!lastmile
+sudo tail -f /var/log/uucp/Debug
+cd /etc/default/
+ls
+more ufw 
+ls
+more grub 
+cd
+cd ltfhc-system/
+ls
+mkdir -p etc/default
+cd etc/default
+cp /etc/default/grub .
+ls
+ls /etc/de
+ls /etc/default/
+cd ../
+ls
+more /etc/default/smartmontools 
+more /etc/default/ufw 
+more /etc/default/openvpn 
+ls
+cd default/
+cp /etc/default/openvpn .
+ls -l /etc/default/
+ls -ltr /etc/default/
+cd ..
+ls
+more /etc/default/monit 
+moer /etc/default/collectd 
+more /etc/default/collectd
+ls
+more /etc/sensors3.conf 
+sensors
+sudo vi /etc/sensors3.conf 
+ls /etc/
+man sensors
+sensors --bus-list
+sensors --bus-list -c /dev/null
+man sensors
+more /etc/sensors.d/.placeholder 
+c d/etc/
+sudo vi /etc/sensors3.conf 
+more /etc/modules 
+fg
+uustat
+uustat --all
+uulog 
+uuname 
+uurate 
+uurate  --help
+uurate 0a
+uurate -a
+sensors
+ls
+cd /etc/collectd/
+ls
+more collection.conf 
+sudo ls /usr/share/doc/collectd-core/examples/collectd.conf .
+sudo cp /usr/share/doc/collectd-core/examples/collectd.conf .
+sudo vi collectd.conf 
+ff
+ls /var/lib/collectd/
+fg
+ls /usr/share/collectd/
+fg
+sudo service collectd start
+sudo cp /usr/share/doc/collectd-core/examples/filters.conf .
+sudo cp /usr/share/doc/collectd-core/examples/thresholds.conf .
+ls
+more filters.conf 
+more collection.conf 
+ls
+more thresholds.conf 
+sudo service collectd start
+collectdmon 
+collectdmon --help
+man collectdmon
+ps aux
+ls /var/lib/collectd/
+ls /var/lib/collectd/rrd/
+ls /var/lib/collectd/rrd/kirando/
+tail /var/log/syslog
+rrdtool --help
+cd /var/lib/collectd/rrd/kirando/
+rrdtool dump interface-wlan0/if_packets.rrd 
+rrdtool dump interface-wlan0/if_packets.rrd |head
+ls
+sudo service collectd stop
+collectd --help
+cd /etc/collectd/
+ls
+more collectd.conf 
+collectd --help
+collectd --help -t
+collectd -t
+collectd -T
+collectd -f
+ls
+vi collectd.conf 
+sudo vi collectd.conf 
+collectd -f
+ls
+tail /var/log/syslog
+sudo collectd -f
+tail /var/log/syslog
+sudo vi collectd.conf 
+sudo collectd -f
+sudo collectd 
+ps aux
+tail /var/log/syslog
+sudo vi collectd.conf 
+kill %%
+sudo kill 2705
+ps aux
+sudo service collectd start
+ls
+sudo vi collectd.conf 
+sudo service collectd start
+collectd -t
+sudo service collectd start
+sudo vi collectd.conf 
+collectd -t
+sudo service collectd start
+ps aux
+tail /var/log/syslog
+ls /var/log
+sudo vi collectd.conf 
+sudo service collectd stop
+sudo service collectd start
+ps aux
+tail /var/log/syslog
+ls /var/log
+sudo vi collectd.conf 
+tail /var/log/syslog
+ps aux
+ls
+cd /var/lib/collectd/
+ls
+cd rrd/
+ls
+cd kirando/
+ls
+cd sensors-f71889fg-isa-1100/
+ls
+rrdtool dump temperature-temp1.rrd 
+rrdtool 
+rrdtool first temperature-temp1.rrd 
+rrdtool graph temperature-temp1.rrd 
+ls
+man rrdtool
+man rrdgraph
+rrdtool 
+rrdtool fetch
+rrdtool fetch temperature-temp1.rrd 
+rrdtool fetch temperature-temp1.rrd  1
+rrdtool fetch temperature-temp1.rrd avg
+rrdtool fetch temperature-temp1.rrd average
+man rrdtool
+man rrdfetch
+rrdtool fetch temperature-temp1.rrd AVERAGE
+man rrdfetch
+cd /etc/
+ls
+cd collectd/
+ls
+sudo vi collectd.conf 
+more filters.conf l
+ls
+more thresholds.conf 
+sudo rm filters.conf thresholds.conf 
+sudo vi collectd.conf 
+:wq
+ls
+cp collectd.conf ~/ltfhc-system/etc/
+cd ~/ltfhc-system/etc/
+mkdir collectd
+mv collectd.conf collectd
+git add collectd/*
+git status
+git commit -a "minimal collectd config"
+git commit -a -m "minimal collectd config"
+git push
+ps aux
+sudo apt-get remove monit 
+cd /etc/init
+ls
+more avahi-d
+more avahi-daemon.conf 
+cd /etc/avahi/services/
+ls
+cd ..
+ls
+more avahi-dnsconfd.action 
+ls
+more avahi-autoipd.action 
+cd /etc/dnsm
+sudo apt-get install dnsmasq 
+sudo apt-get install dnsmasq dnsmasq-utils
+cd /etc/dnsmasq.d/
+sl
+ls
+cd /etc/avahi/
+ls
+more hosts 
+ls
+sudo vi avahi-daemon.conf 
+sudo service avahi-daemon restart
+ps aux
+os ayx
+ps aux
+sudo apt-get remove avahi-*
+sudo apt-get remove avahi-daemon avahi-autoipd avahi-dnsconfd avahi-utils 
+sudo apt-get autoremove
+sudo apt-get install ifplugd 
+cd /etc/ifplugd/
+ls
+more ifplugd.
+more ifplugd.conf 
+cd /etc/de
+cd /etc/default/
+ls
+sudo vi ifplugd 
+sudo vi /etc/network/interfaces 
+cd
+ls
+cd ltfhc-system/etc/
+ls
+mkdir network
+cd network/
+cp /etc/network/interfaces .
+cd ../default/
+ls
+cp /etc/default/ifplugd .
+more /etc/default/collectd 
+ps ax
+ps axw
+ps axu
+ls
+more /etc/network/interfaces 
+ls
+more ifplugd 
+ls
+cd ..
+ls
+git status
+git push
+gut pull
+git pull
+git status
+ls
+git push
+ls
+git add collectd/
+git add default/ network/
+git status
+git commit -a -m "More misc files"
+git push
+ls
+more /etc/dnsmasq.
+more /etc/dnsmasq.conf 
+sudo cp dnsmasq.conf /etc/
+sensors
+cp /etc/hosts .
+vi hosts
+rm hosts
+dig @localhost google.com
+cd /etc/default/
+more hostapd 
+less /usr/share/doc/hostapd/examples/hostapd.conf.gz
+less /usr/share/doc/hostapd/examples/hostapd.eap_user 
+less /usr/share/doc/hostapd/examples/hostapd.wpa_psk 
+less /usr/share/doc/hostapd/examples/hostapd.radius_clients 
+less /usr/share/doc/hostapd/examples/hostapd.accept 
+less /usr/share/doc/hostapd/examples/hostapd.deny 
+iw
+iw phy0 info
+lsusb
+lspci
+dmesg
+dmesg|grep ath
+ls
+cd ../hostapd/
+ls
+cd ..
+vi hostapd.conf
+sudo cp /tmp/hostapd.conf hostapd.conf
+hostapd --help
+
+hostapd -dd /etc/hostapd.conf 
+dmesg|grep ath
+dmesg|grep eth
+cd default/
+ls
+sudo vi hostapd 
+cp hostapd ~/ltfhc-system/etc/default/
+ls ~/ltfhc-system/etc/default/
+more dbus 
+more bsdmainutils 
+more avahi-daemon 
+sudo rm avahi-daemon 
+more apport 
+more acpid 
+acpi_available 
+echo $?
+acpi_listen 
+more monit 
+ls /etc/init.d
+more /etc/init.d/lm-sensors 
+sensors
+cd ..
+ls
+more host.conf 
+more nsswitch.conf 
+more ucf.conf 
+man ucf
+man ucfq
+ucfq
+man ucfq
+man ucfr
+ls
+mroe hdparm.conf 
+more hdparm.conf 
+apm
+apm_available 
+ethtool 
+ethtool -h
+expiry 
+man expiry 
+expiry lastmile
+expiry -c
+echo $?
+ex
+f
+man fc
+man fc-ca
+man fc-cache
+man faked-tcp
+factor
+man factor
+man fgconsole 
+man fg
+man fi
+fi
+man flo
+fsadm 
+fstrim 
+man fstrim 
+sudo fstrim /
+tail /var/log/syslog
+dmesg
+sudo service acpid stop
+ps aux
+ls
+more wgetrc 
+ls
+more networks 
+more insserv
+more insservc
+more insserv.conf
+man insserv
+ls
+more ucf.conf 
+wvdial
+sudo rm wvdial.conf 
+ls
+more debian_version 
+more adjtime 
+ls ap
+ls apm
+ls avahi/
+sudo rm -rf avahi/
+ls collectd/
+ls depmod.d/
+more depmod.d/ubuntu.conf 
+ls dhcp/
+more dhcp/dhclient.conf 
+ls
+more environment 
+more fstab
+more hdparm.conf 
+hdparm 
+man fstrim
+ls
+more ltrace.conf 
+man ltrace
+ls
+more nail.rc 
+l
+more logrotate.conf 
+sudo vi logrotate.conf
+ls
+ls polkit-1/
+ls polkit-1/localauthority.conf.d/
+ls resolvconf/
+more resolvconf/interface-order 
+ls smartmontools/
+ls smartmontools/run.d/
+more smartmontools/run.d/10po*
+smart
+smartctl 
+ls
+more vtrgb 
+ls update-manager/
+more update-manager//meta-release
+cd
+sudo stop ttyS0
+miniterm.py -b 9600 /dev/ttyS0
+cd /etc/openvpn/
+ls
+more client.conf 
+cp client.conf ~/ltfhc-system/etc/openvpn/client.conf
+mkdir ~/ltfhc-system/etc/openvpn
+cp client.conf ~/ltfhc-system/etc/openvpn/client.conf
+cd ~/ltfhc-system/etc/openvpn/client.conf
+cd ~/ltfhc-system/etc/openvpn/
+git add client.conf
+git status
+cd ../default/
+ls
+git add hostapd
+cd ..
+git commit -a -m "openvpn and beginnings of hostapd
+"
+git push
+more default/hostapd 
+ping 10.0.8.1
+ifconfig
+ping 10.8.0.1
+ps
+ping 10.8.0.1
+tail /var/log/syslog
+ping 10.8.0.1
+sudo dpkg -l
+sudo dpkg -l|less
+cd ltfhc-system/
+ls
+git status
+more nam
+ls
+ps aux
+sudo service openvpn start
+tail /var/log/syslog
+ls
+cd gobiserial/
+ls
+cd GobiSerial/
+ls
+cd
+cd ltfhc-system/
+git pull
+ls
+cd gobiserial-lm/
+sudo make install
+cd ../qmi-wwan-lm/
+sudo make install
+cd ..
+ls
+cd etc/
+ls
+sudo cp collectd/* /etc/collectd/
+sudo cp cron.daily/* /etc/cron.daily/
+sudo chmod 755 /etc/cron.daily/trim 
+sudo cp default/* /etc/default/
+sudo update-grub2
+sudo cp dnsmasq.conf timezone /etc
+sudo dpkg-reconfigure tzdata
+sudo cp hostapd/* /etc/hostapd
+ls /etc/hostapd
+sudo cp network/interfaces /etc/network/interfaces 
+sudo cp ppp/airtel /etc/ppp/peers/
+sudo reboot
+sudo pip install django
+sudo pip install django-autofixture
+ping google.com
+more /etc/resolv
+more /etc/resolv.conf 
+ping 8.8.8.8
+ls
+cd ltfhc-system/
+ls
+git pull
+sudo vi /etc/resolv.conf 
+dig @192.168.2.1 google.com
+sudo vi /etc/resolv.conf 
+git pull
+sudo vi /etc/resolv.conf 
+git pull
+ufw status
+sudo ufw status
+ping google.com
+git pull
+git reset --hard
+sudo rm gobiserial-lm/*.mod gobiserial-lm/*.cmd
+sudo rm gobiserial-lm/.*.mod gobiserial-lm/.*.cmd
+sudo rm -rf gobiserial-lm/.tmp_versions/ gobiserial-lm/modules.order 
+sudo rm -rf qmi-wwan-lm/.*.cmd qmi-wwan-lm/.tmp_versions/
+git pull
+cd /home/
+sudo mkdir lake
+cd lake/
+ls
+sudo rm -rf lakesite
+sudo git clone ~lastmile/lakesite.bundle -r master lakesite
+sudo git clone ~lastmile/lakesite.bundle -b master lakesite
+sudo chown -R www-data:www-data lakesite/
+ls -al
+cd lakesite/
+ls
+sudo apt-get install sqlite3
+sudo pip install django-autofixture
+sudo pip install email-extras
+sudo pip install django-email-extras
+sudo pip install uwsgi
+sudo apt-get install python-dev
+sudo pip install uwsgi
+ld
+ls
+sudo cp lakesite.conf /etc/nginx/sites-available/
+cd lakesite/
+cp settings.py-hact.net settings.py
+sudo cp settings.py-hact.net settings.py
+sudo cp wsgi.py-hact.net wsgi.py
+ls -al
+c
+d
+cd
+ls
+cd ltfhc-system/
+ls
+cd etc/uucp/
+ls
+sudo cp * /etc/uucp
+cd ..
+ls
+cd init/
+ls
+sudo cp clinic.conf /etc/init
+ls /etc/init
+sudo start clinic
+sudo touch /var/log/clinic.log
+sudo chown www-data:www-data /var/log/clinic.log
+ls -al
+ls -al /home/lake/
+ls -al /home/lake/lakesite/
+ps auxs
+ps auxw
+sudo start clinic
+ps auxw
+cd /etc/nginx/
+cd sites-enabled/
+ls
+sudo rm default 
+sudo ln -s /etc/nginx/sites-available/lakesite.conf lakesite
+ls -al
+sudo service nginx restart
+cd /home/lake/lakesite/
+sudo sqlite3 lake.db 
+ls -al
+sudo vi .gitignore 
+ls a-l
+ls -al
+ls -alR
+sudo chown -R www-data:www-data *
+ls a-l
+ls -al
+git status
+sudo git commit -a -m "ignore db"
+git status
+pip install minimalmodbus
+sudo pip install minimalmodbus
+ls
+cd
+ls
+sudo git clone git@github.com:iilab/ltfhc-solar.git
+sudo git clone https://github.com/iilab/ltfhc-solar.git
+ls
+tail /var/log/syslog
+cd ltfhc-solar/
+ls
+./collectd-solar.py 
+cd ..
+sudo shutdown -h now
+sudo pon airtel
+ps auxs
+ps aux
+ifconfig
+ip link
+tail /var/log/syslog
+ls /dev
+lsusb -v
+lsusb
+ls /dev/
+cd /etc/ppp/
+ls
+cd
+ls
+cd ltfhc-system/
+ls
+cd gobiserial-lm/
+arp -a
+mmake
+mkae
+make
+sudo make install
+cd ../qmi-wwan-lm/
+make
+sudo make install
+sudo reboot
+ls /dev
+dmesg
+miniterm.py -b 9600 /dev/ttyS0
+miniterm.py -b 9600 /dev/ttyUSB1
+miniterm.py -b 9600 /dev/ttyUSB0
+cd /etc/ppp/
+ls
+more options 
+cd peers/
+ls
+more airtel 
+sudo vi airtel
+pon airtel
+tail /var/log/syslog
+ifconfig
+tail /var/log/syslog
+tail - f/var/log/syslog
+tail -f /var/log/syslog
+ls
+cd
+cd ltfhc-solar/
+ls
+vi /etc/collectd/collectd.conf 
+sudo vi /etc/collectd/collectd.conf 
+sudo restart collectd
+sudo service collectd restart
+cd /etc/ppp/peers/
+ls
+sudo vi airtel 
+pon airtel
+tail -f /var/log/syslog
+poff airtel
+ps aux
+tail -f /var/log/syslog
+ps aux
+pon airtel
+tail -f /var/log/syslog
+sudo vi airtel 
+ps aux
+poff airtel
+ps aux
+tail -f /var/log/syslog
+pon airtel
+tail -f /var/log/syslog
+sudo vi airtel 
+poff airtel
+ps aux
+pon airtel
+tail -f /var/log/syslog
+ping 192.168.1.20
+ifconfig
+sudo ip addr 
+sudo ip addr  eth0
+sudo ip addr help
+sudo ip addr change 192.168.1.1 dev eth0
+ping 192.168.1.20
+ifconfig
+ip link
+ip addr
+sudo ifconfig eth0 
+sudo ifconfig eth0 help
+sudo ifconfig eth0 --help
+sudo ifconfig --help
+sudo ifconfig eth0 192.168.1.1
+ifconfig
+ping 192.168.1.20
+sudo ifconfig eth0 192.168.1.1
+ifconfig
+more /etc/network/interfaces 
+sudo ifdown eth0
+sudo ifup eth0
+ps auxw
+ifconfig -a
+ping 192.168.20.1
+ping 192.168.1.20
+sudo ifdown eth0 && ifup eth0
+sudo ifdown eth0 && sudo  ifup eth0
+ifconfig
+ping 172.16.99.254
+man interfaces
+man bridge 
+man interfaces
+man pppd
+ps auw
+ps auwx
+poff airtel
+ps auwx
+sudo kill 4188
+ps auxw
+more /etc/uucp/sys
+cd /etc/network/
+sudo vi interfaces 
+cd ../
+vi hostapd.conf 
+sudo vi hostapd.conf 
+ifconfig
+sudo vi dnsmasq.conf 
+tail -f /var/log/syslog
+ps auxw
+dmes
+dmesg
+tail /var/log/syslog
+hostapd
+sudo hostapd -dd /etc/hostapd/hostapd.conf 
+ps auxw
+ps auxw|grep hostap
+sudo /etc/init.d/hostapd start
+ps auxw|grep hostap
+tail /var/log/syslog
+sudo vi /etc/dnsmasq.conf 
+sudo service dnsmasq restart
+ps auwx
+ifconfig -a
+tail -f /var/log/syslog
+sudo vi /etc/network/interfaces 
+sudo ifdown eth1
+sudo ifup eth1
+sudo ifdown eth1
+ps auxw
+miniterm.py -b 9600 /dev/ttyUSB0
+miniterm.py -b 9600 /dev/ttyUSB1
+miniterm.py -b 9600 /dev/ttyUSB2
+ls /dev
+pon airtel
+tail -f /var/log/syslog
+poff airtel
+ps auxw
+miniterm.py --help
+miniterm.py -rts=0  -b 9600 /dev/ttyUSB2
+miniterm.py --rts=0  -b 9600 /dev/ttyUSB2
+miniterm.py --dtr=0 -b 9600 /dev/ttyUSB2
+sudo halt
+miniterm.py -b 9600 /dev/ttyUSB2
+miniterm.py -b 9600 /dev/ttyUSB1
+dmesg
+dmesg|grep qc
+sudo rmmod qcserial
+sudo modprobe qcserial
+tail -f /var/log/syslog
+miniterm.py -b 9600 /dev/ttyUSB1
+sens
+sensors
+sudo stop ttyS0
+miniterm /dev/ttyS0
+miniterm.py /dev/ttyS0
+sudo start ttyS0
+ps auxw
+miniterm.py -b 9600 /dev/ttyUSB1
+cat /etc/ppp/options.mobile 
+miniterm.py -b 921600 /dev/ttyUSB1
+pon airtel
+tail -f /var/log/syslog
+poff airtel
+miniterm.py -b 921600 /dev/ttyUSB1
+sudo shutdown -h now
+sudo vi /etc/ppp/options
+ps auxw
+sudo pon airtel
+tail -f /var/log/syslog
+sudo kill 4400
+tail -f /var/log/syslog
+poff airtel
+ps auxw
+sudo poff airtel
+ps auxw
+sudo pon airtel
+tail -f /var/log/syslog
+sudo poff airtel
+miniterm.py -b 921600 /dev/ttyUSB1
+miniterm.py -b 921600 /dev/ttyUSB5
+sudo vi /etc/ppp/options
+sudo vi /etc/ppp/options.mobile 
+sudo pon airtel
+tail -f /var/log/syslog
+sudo vi /etc/network/interfaces 
+sudo poff airtel
+ps auxw
+tail -f /var/log/syslog
+sudo ifup ppp0
+tail -f /var/log/syslog
+ps auxw
+ping google.com
+ping nkasi.vpn
+ping 10.8.0.1
+more /etc/hosts
+cd ltfhc-system/
+ls
+cd etc/
+ls
+cat hosts
+cat hosts >> /etc/hosts
+sudo cat hosts >> /etc/hosts
+sudo 'cat hosts >> /etc/hosts'
+sudo su -
+man interfaces
+ps auxw
+cat /etc/network/interfaces 
+# and how to activate them. For more information, see interfaces(5).
+# The loopback network interface
+auto lo
+iface lo inet loopback
+# The primary network interface
+auto wlan0
+iface wlan0 inet manual
+auto eth1
+iface eth1 inet static
+auto eth0
+iface eth0 inet static
+auto br0
+iface br0 inet static
+auto ppp0
+iface ppp0 inet ppp
+lastmile@kirando:~$
+auto lo
+iface lo inet loopback
+# The primary network interface
+auto wlan0
+iface wlan0 inet manual
+auto eth1
+iface eth1 inet static
+auto eth0
+iface eth0 inet static
+auto br0
+iface br0 inet static
+auto ppp0
+iface ppp0 inet ppp
+auto lo
+iface lo inet loopback
+# The primary network interface
+auto wlan0
+iface wlan0 inet manual
+auto eth1
+iface eth1 inet static
+auto eth0
+iface eth0 inet static
+auto br0
+iface br0 inet static
+auto ppp0
+iface ppp0 inet ppp
+nano blah
+bash blah
+cat /etc/network/interfaces‏
+sudo reboot
+ps auxw
+grep ppp /var/log/syslog
+sudo vi /etc/ppp/options.mobile 
+grep chat /var/log/syslog
+sudo pon airtel
+tail -f /var/log/syslog
+ps auxw
+sudp kill 2113
+sudo kill 2113
+ps auxw
+tail -f /var/log/syslog
+ps auxw
+sudo reboot
+grep ppp /var/log/syslog
+sudo poff airtel
+ps auxw
+ls /dev
+ls /dev/serial/by-id/usb-ZTE_Incorporated_ZTE_WCDMA_Technologies_MSM_MF1900ZTED010000-if03-port0 
+ls -l /dev/ttyUSB5
+ls-l /dev/serial/by-id
+ls -l /dev/serial/by-id
+sudo vi /etc/ppp/options.mobile 
+sudo pon airtel
+tail -f /var/log/syslog
+sudo reboot
+grep ppp /var/log/syslog
+ps auxw
+ps auxw|grep ppp
+sudo pon airtel
+tail -f /var/log/syslog
+cd /etc/ppp
+ls
+more options.mobile 
+ls
+cd /etc/init.d
+ls
+cd /etc/init
+ls
+cd /etc/init.d
+plog
+lsusb 
+lsmod
+sudo vi /etc/option
+sudo vi /etc/modules 
+sudo reboot
+grep ppp /var/log/syslog
+sudo grep ppp /var/log/syslog
+tail /var/log/syslog
+grep ppp /var/log/syslog
+file /var/log/syslog
+less /var/log/syslog
+for subsystem in /sys/class/*; do   for action in added changed removed;   do     echo "${subsystem}-device-${action}";   done; done
+udevadm monitor --environment
+which pon
+vi /etc/init/airtel.conf
+sudo vi /etc/init/airtel.conf
+initctl status
+initctl list
+udevadm monitor --environment
+sudo reboot
+sudo poweroff
+sudo vi /etc/openvpn/client.conf 
+dmesg
+cat /tmp/airtel.log 
+sudo service openvpn restart
+ps auxw
+ping -I ppp0 google.com
+sudo poff airtel
+ps auxw
+sudo pon ppp0
+sudo pon airtel
+ps auxw
+tail /var/log/syslog
+ps auxw
+sud poff airtel
+sudo poff airtel
+ps auxw|grep ppp
+tail /var/log/syslog
+ps auxw|grep ppp
+sudo stop airtel
+miniterm.py -b 921600 /dev/serial/by-id/usb-ZTE_Incorporated_ZTE_WCDMA_Technologies_MSM_MF1900ZTED010000-if03-port0 
+tail /var/log/syslog
+ps auxw|grep ppp
+tail /var/log/syslog
+tail -f /var/log/syslog
+ps auxw
+more /etc/init/airtel.conf 
+more /etc/init/autossh.conf 
+sudo vi /etc/init/airtel.conf
+sudo stop airtel
+sudo start airtel
+tail -f /var/log/syslog
+ps auxw
+sudo vi /etc/init/airtel.conf
+sudo stop airtel
+ps auxw
+sudo killall ppd
+sudo killall pppd
+ps auxw
+sudo start airtel
+ps auxw
+tail -f /var/log/syslog
+ps auxw
+ps auxw|grep ppp
+sudo killall pppd
+man pon
+cd /etc/openvpn/
+ls
+sudo cp client.conf client-443.conf 
+sudo vi client-443.conf 
+ps auxw|grep open
+sudo service openvpn restart
+tail -f /var/log/syslog
+sudo vi /etc/init/airtel.conf 
+sudo restart airtel
+ps auw
+ps auxww
+sudo vi client-443.conf 
+ls
+sudo vi kirando-443.crt
+sudo vi kirando-443.key
+sudo vi client-443.conf 
+sudo restart airtel
+sudo service openvpn restart
+tail -f /var/log/syslog
+ls
+sudo vi client-443.conf 
+sudo service openvpn restart
+grep 443 /var/log/syslog
+tail -f /var/log/syslog
+ls
+ifconfig
+sudo start airtel
+ps auxw
+tail -f /var/log/syslog
+ifconfig
+sudo vi client-443.conf 
+sudo service openvpn restart
+tail -f /var/log/syslog
+sudo vi client-443.conf 
+sudo service openvpn restart
+tail -f /var/log/syslog
+netstat -rn
+ifconfig
+netstat -rn
+sudo vi client-443.conf 
+sudo service openvpn restart
+tail -f /var/log/syslog
+more client.conf
+tail -f /var/log/syslog
+ls /var/run
+cat /var/run/ppp0.pid
+ps auxw
+sudo kill 2943
+ps auxw
+tail -f /var/log/syslog
+sudo vi /etc/init/autossh.conf 
+sudo reboot
+ps auxw
+dmesg
+tail /var/log/syslo
+tail /var/log/syslog
+sudo less /var/log/syslog
+ifconfig -a
+sudo vi /etc/init/autossh.conf 
+sudo restart autossh
+sudo reboot
+ps auxw
+sudo restart autosshklfskd;fksd
+tail /var/log/syslog
+dmesg
+ps auxw
+cat /etc/init/airtel.conf 
+;s
+ls
+rm blah*
+ls
+tail /var/log/syslog
+ps auxw
+ka
+ls
+ps
+sudo stop ttyS0
+miniterm.py -b 9600 /dev/ttyS0
+sudo start ttyS0
+miniterm.py -b 9600 /dev/ttyS0
+ps auxw
+ifconfig
+ping 10.8.0.1
+ping 10.9.0.1
+more /etc/network/interfaces
+sudo ifdown ppp0
+sudo ifup ppp0
+ps axuw
+tail /var/log/syslog
+sudo reboot
+sudo ifdown eth0
+tail /var/log/syslog
+sudo ifup eth0
+tail /var/log/syslog
+sudo tcpdump -i eth1
+tail /var/log/syslog
+tail -f /var/log/syslog
+ps auxw
+ping 10.9.0.1
+tail -f /var/log/syslog
+ls
+sudo vi /etc/network/interfaces
+more /etc/network/interfaces
+sudo ifdown eth1
+sudo ifup eth1
+ps auxw
+tail -f /var/log/syslog
+ping http://192.168.45.2/
+ping 192.168.45.2
+tail -f /var/log/syslog
+more /etc/network/interfaces
+sudo ifdown br0 && sudo ifup br0
+ps auxw
+tail -f /var/log/syslog
+ifconfig
+ls
+sudo mv ltfhc-next.update.bundle /home/ltfhc-deploy/bundles/ltfhc-next.bundle 
+sudo su -
+ps auxw
+ping 192.168.45.2
+tail -f /var/log/syslog
+tail -100 /var/log/syslog
+sudo vi /etc/network/interfaces
+sudo vi /etc/dnsmasq.conf 
+wpa_passphrase health
+wpa_passphrase 
+wpa_passphrase health
+sudo vi /etc/hostapd.conf 
+sudo vi /etc/hostapd/hostapd.wpa_psk 
+sudo service hostapd reload
+ls
+tail -100 /var/log/syslog
+ping 192.168.45.2
+tail /var/log/syslog
+tail -f /var/log/syslog 
+ping 192.168.45.2
+ls
+tail -f /var/log/syslog 
+cd /et c
+hostapd_cli 
+sudo hostapd_cli 
+cd /etc/hostapd/
+ls
+more hostapd.conf 
+ls
+more hostapd.wpa_psk 
+sudo vi hostapd.conf 
+sudo service hostapd restart
+tail /var/log/syslog
+ping google.com
+pwd
+git clone https://huslage:f3ca6eab8266aa02d5192e276be5169c325ac915@github.com/iilab/ltfhc-next.git
+rm -rf ltfhc-next.
+ls
+cd ltfhc-
+cd ltfhc-next/
+git pull
+git pull origin master
+git push origin master
+git log
+git checkout 44e16aa
+git checkout -b test 44e16aa
+git checkout master
+git reset --hard
+git checkout -b test 44e16aa
+git branch -d test
+git checkout -b test 44e16aa
+sudo su -
+cleared
+reset
+ls
+git log help 
+git help log
+ls
+sudo scp ltfhc-next.bundle /home/ltfhc-deploy/bundles/
+sudo su -
+ps auxw
+sudo vi /etc/cron.daily/airtel
+ps auxw
+telnet localhost 5984
+~~.
+ls /etc/init
+more /etc/init/autossh.conf
+ssh localhost 2222
+sudo service autssh restart
+sudo service autossh restart
+tail /var/log/syslog
+ps auxw
+telnet localhost 5984
+lsof -i
+sudo lsof -i
+cd /home/ltfhc-deploy/etc/couchdb/
+ls
+vi local.ini
+sudo vi local.ini
+sudo restart couchdb
+sudo service couchdb restart
+cd ../../var/cou
+cd ../../var/
+ls
+cd log/couchdb/
+tail couch.log
+tail -50  couch.log
+date
+tail -50  couch.log
+sudo service couchdb stop
+ps auxw
+sudo pkill -u couchdb
+ps auxw
+sudo service couchdb start
+tail -50  couch.log
+ps auxw
+tail -f couch.log
+cd /home/ltfhc-deploy//ltfhc-next/system/
+ls
+cd replication/
+ls
+./source.py 

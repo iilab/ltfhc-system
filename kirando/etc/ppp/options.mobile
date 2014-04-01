@@ -1,0 +1,16 @@
+/dev/serial/by-id/usb-ZTE_Incorporated_ZTE_WCDMA_Technologies_MSM_MF1900ZTED010000-if03-port0
+115200
+lock
+crtscts
+modem
+passive
+novj
+defaultroute
+noipdefault
+usepeerdns
+noauth
+hide-password
+persist
+holdoff 10
+maxfail 0
+debug

@@ -1,0 +1,483 @@
+kirando
+    description: Desktop Computer
+    product: VT3410 T120SMB (NULL)
+    vendor: VIA technology Inc.
+    version: 410 AMI R101
+    serial: 001FF207C434
+    width: 64 bits
+    capabilities: smbios-2.6 dmi-2.6 vsyscall32
+    configuration: boot=normal chassis=desktop family=NULL sku=NULL uuid=20101223-0000-0000-0000-001FF207C434
+  *-core
+       description: Motherboard
+       product: To be filled by O.E.M.
+       vendor: To be filled by O.E.M.
+       physical id: 0
+       version: To be filled by O.E.M.
+       serial: To be filled by O.E.M.
+       slot: To Be Filled By O.E.M.
+     *-firmware
+          description: BIOS
+          vendor: VIA technology Inc.
+          physical id: 0
+          version: 410 AMI R101
+          date: 05/04/2012
+          size: 64KiB
+          capacity: 960KiB
+          capabilities: isa pci pnp apm upgrade shadowing escd cdboot bootselect socketedrom edd int13floppy1200 int13floppy720 int13floppy2880 int5printscreen int9keyboard int14serial int17printer int10video acpi usb ls120boot zipboot biosbootspecification
+     *-cpu:0
+          description: CPU
+          product: VIA Eden X2 U4200 @ 1.0+ GHz
+          vendor: CentaurHauls
+          physical id: 4
+          bus info: cpu@0
+          version: VIA Eden X2 U4200 @ 1.0+ GHz
+          serial: To Be Filled By O.E.M.
+          slot: CPU 1
+          size: 1GHz
+          capacity: 1GHz
+          width: 64 bits
+          clock: 200MHz
+          capabilities: x86-64 fpu fpu_exception wp vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat clflush acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx constant_tsc rep_good nopl pni monitor vmx est tm2 ssse3 cx16 xtpr sse4_1 popcnt rng rng_en ace ace_en ace2 phe phe_en pmm pmm_en lahf_lm ida
+          configuration: cores=2 enabledcores=2 threads=2
+        *-cache:0
+             description: L1 cache
+             physical id: 5
+             slot: L1-Cache
+             size: 128KiB
+             capacity: 128KiB
+             capabilities: burst pipeline-burst asynchronous internal write-back data
+        *-cache:1
+             description: L2 cache
+             physical id: 6
+             slot: L2-Cache
+             size: 1MiB
+             capacity: 1MiB
+             capabilities: burst pipeline-burst asynchronous internal write-back unified
+     *-memory
+          description: System Memory
+          physical id: 23
+          slot: System board or motherboard
+          size: 4GiB
+        *-bank:0
+             description: SODIMM DDR3 Synchronous
+             product: 78.B2GC9.AF1
+             vendor: Manufacturer00
+             physical id: 0
+             serial: 33303102
+             slot: DIMM0
+             size: 4GiB
+             width: 64 bits
+        *-bank:1
+             description: [empty]
+             product: ModulePartNumber01
+             vendor: Manufacturer01
+             physical id: 1
+             serial: SerNum01
+             slot: DIMM1
+     *-cpu:1
+          product: VIA Eden X2 U4200 @ 1.0+ GHz
+          vendor: CentaurHauls
+          physical id: 1
+          bus info: cpu@1
+          width: 64 bits
+          capabilities: fpu fpu_exception wp vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat clflush acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx x86-64 constant_tsc rep_good nopl pni monitor vmx est tm2 ssse3 cx16 xtpr sse4_1 popcnt rng rng_en ace ace_en ace2 phe phe_en pmm pmm_en lahf_lm ida
+     *-pci:0
+          description: Host bridge
+          product: VX900 Host Bridge: Host Control
+          vendor: VIA Technologies, Inc.
+          physical id: 100
+          bus info: pci@0000:00:00.0
+          version: 80
+          width: 32 bits
+          clock: 33MHz
+        *-display UNCLAIMED
+             description: VGA compatible controller
+             product: VX900 Graphics [Chrome9 HD]
+             vendor: VIA Technologies, Inc.
+             physical id: 1
+             bus info: pci@0000:00:01.0
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pm msi vga_controller bus_master cap_list
+             configuration: latency=64
+             resources: memory:fd000000-fdffffff memory:fc000000-fcffffff memory:d0000000-dfffffff memory:fe8f0000-fe8fffff
+        *-multimedia:0
+             description: Audio device
+             product: VIA Technologies, Inc.
+             vendor: VIA Technologies, Inc.
+             physical id: 1.1
+             bus info: pci@0000:00:01.1
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pm msi bus_master cap_list
+             configuration: driver=snd_hda_intel latency=0
+             resources: irq:64 memory:fe8ec000-fe8effff
+        *-pci:0
+             description: PCI bridge
+             product: VX900 PCI Express Root Port 0
+             vendor: VIA Technologies, Inc.
+             physical id: 3
+             bus info: pci@0000:00:03.0
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci pciexpress pm msi normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:10 ioport:c000(size=4096) memory:fe900000-fe9fffff
+           *-storage
+                description: SATA controller
+                product: JMB362 SATA Controller
+                vendor: JMicron Technology Corp.
+                physical id: 0
+                bus info: pci@0000:01:00.0
+                version: 10
+                width: 32 bits
+                clock: 33MHz
+                capabilities: storage pm pciexpress ahci_1.0 bus_master cap_list rom
+                configuration: driver=ahci latency=0
+                resources: irq:10 ioport:cc00(size=8) ioport:c880(size=4) ioport:c800(size=8) ioport:c480(size=4) ioport:c400(size=16) memory:fe9ffc00-fe9ffdff memory:fe9e0000-fe9effff
+        *-pci:1
+             description: PCI bridge
+             product: VX900 PCI Express Root Port 1
+             vendor: VIA Technologies, Inc.
+             physical id: 3.1
+             bus info: pci@0000:00:03.1
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci pciexpress pm msi normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:10
+        *-pci:2
+             description: PCI bridge
+             product: VX900 PCI Express Root Port 2
+             vendor: VIA Technologies, Inc.
+             physical id: 3.2
+             bus info: pci@0000:00:03.2
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci pciexpress pm msi normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:10 ioport:d000(size=4096) memory:fea00000-feafffff
+           *-network
+                description: Ethernet interface
+                product: VT6120/VT6121/VT6122 Gigabit Ethernet Adapter
+                vendor: VIA Technologies, Inc.
+                physical id: 0
+                bus info: pci@0000:03:00.0
+                logical name: eth0
+                version: 82
+                serial: 00:1f:f2:07:58:be
+                size: 1Gbit/s
+                capacity: 1Gbit/s
+                width: 64 bits
+                clock: 33MHz
+                capabilities: pm pciexpress msi bus_master cap_list ethernet physical tp 10bt 10bt-fd 100bt 100bt-fd 1000bt 1000bt-fd autonegotiation
+                configuration: autonegotiation=on broadcast=yes driver=via-velocity driverversion=1.15 duplex=half latency=0 link=no multicast=yes port=twisted pair speed=1Gbit/s
+                resources: irq:10 ioport:d800(size=256) memory:feaffc00-feaffcff
+        *-pci:3
+             description: PCI bridge
+             product: VX900 PCI Express Root Port 3
+             vendor: VIA Technologies, Inc.
+             physical id: 3.3
+             bus info: pci@0000:00:03.3
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci pciexpress pm msi normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:10 ioport:e000(size=4096) memory:feb00000-febfffff
+           *-network
+                description: Ethernet interface
+                product: VT6120/VT6121/VT6122 Gigabit Ethernet Adapter
+                vendor: VIA Technologies, Inc.
+                physical id: 0
+                bus info: pci@0000:04:00.0
+                logical name: eth1
+                version: 82
+                serial: 00:1f:f2:07:c4:34
+                size: 100Mbit/s
+                capacity: 1Gbit/s
+                width: 64 bits
+                clock: 33MHz
+                capabilities: pm pciexpress msi bus_master cap_list ethernet physical tp 10bt 10bt-fd 100bt 100bt-fd 1000bt 1000bt-fd autonegotiation
+                configuration: autonegotiation=on broadcast=yes driver=via-velocity driverversion=1.15 duplex=full ip=192.168.45.1 latency=0 link=yes multicast=yes port=twisted pair speed=100Mbit/s
+                resources: irq:10 ioport:e800(size=256) memory:febffc00-febffcff
+        *-ide
+             description: IDE interface
+             product: VX900 Serial ATA Controller
+             vendor: VIA Technologies, Inc.
+             physical id: f
+             bus info: pci@0000:00:0f.0
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: ide pm bus_master cap_list
+             configuration: driver=pata_via latency=64
+             resources: irq:11 ioport:bc00(size=8) ioport:b880(size=4) ioport:b800(size=8) ioport:b480(size=4) ioport:b400(size=16)
+        *-usb:0
+             description: USB controller
+             product: VT82xxxxx UHCI USB 1.1 Controller
+             vendor: VIA Technologies, Inc.
+             physical id: 10
+             bus info: pci@0000:00:10.0
+             version: a0
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pm uhci bus_master cap_list
+             configuration: driver=uhci_hcd latency=64
+             resources: irq:5 ioport:b080(size=32)
+        *-usb:1
+             description: USB controller
+             product: VT82xxxxx UHCI USB 1.1 Controller
+             vendor: VIA Technologies, Inc.
+             physical id: 10.1
+             bus info: pci@0000:00:10.1
+             version: a0
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pm uhci bus_master cap_list
+             configuration: driver=uhci_hcd latency=64
+             resources: irq:11 ioport:b000(size=32)
+        *-usb:2
+             description: USB controller
+             product: VT82xxxxx UHCI USB 1.1 Controller
+             vendor: VIA Technologies, Inc.
+             physical id: 10.2
+             bus info: pci@0000:00:10.2
+             version: a0
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pm uhci bus_master cap_list
+             configuration: driver=uhci_hcd latency=64
+             resources: irq:10 ioport:ac00(size=32)
+        *-usb:3
+             description: USB controller
+             product: VT82xxxxx UHCI USB 1.1 Controller
+             vendor: VIA Technologies, Inc.
+             physical id: 10.3
+             bus info: pci@0000:00:10.3
+             version: a0
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pm uhci bus_master cap_list
+             configuration: driver=uhci_hcd latency=64
+             resources: irq:11 ioport:a880(size=32)
+        *-usb:4
+             description: USB controller
+             product: USB 2.0
+             vendor: VIA Technologies, Inc.
+             physical id: 10.4
+             bus info: pci@0000:00:10.4
+             version: 90
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pm debug ehci bus_master cap_list
+             configuration: driver=ehci-pci latency=64
+             resources: irq:11 memory:fe8ebc00-fe8ebcff
+        *-isa
+             description: ISA bridge
+             product: VX900 Bus Control and Power Management
+             vendor: VIA Technologies, Inc.
+             physical id: 11
+             bus info: pci@0000:00:11.0
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: isa pm cap_list
+             configuration: latency=0
+        *-pci:4
+             description: PCI bridge
+             product: VX855/VX875/VX900 PCI to PCI Bridge
+             vendor: VIA Technologies, Inc.
+             physical id: 13
+             bus info: pci@0000:00:13.0
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci subtractive_decode bus_master cap_list
+        *-multimedia:1
+             description: Audio device
+             product: VT8237A/VT8251 HDA Controller
+             vendor: VIA Technologies, Inc.
+             physical id: 14
+             bus info: pci@0000:00:14.0
+             version: 20
+             width: 64 bits
+             clock: 33MHz
+             capabilities: pm msi pciexpress bus_master cap_list
+             configuration: driver=snd_hda_intel latency=0
+             resources: irq:65 memory:fe8e4000-fe8e7fff
+     *-pci:1
+          description: Host bridge
+          product: VX900 Error Reporting
+          vendor: VIA Technologies, Inc.
+          physical id: 101
+          bus info: pci@0000:00:00.1
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:2
+          description: Host bridge
+          product: VX900 CPU Bus Controller
+          vendor: VIA Technologies, Inc.
+          physical id: 102
+          bus info: pci@0000:00:00.2
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:3
+          description: Host bridge
+          product: VX900 DRAM Bus Control
+          vendor: VIA Technologies, Inc.
+          physical id: 103
+          bus info: pci@0000:00:00.3
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:4
+          description: Host bridge
+          product: VX900 Power Management and Chip Testing Control
+          vendor: VIA Technologies, Inc.
+          physical id: 104
+          bus info: pci@0000:00:00.4
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:5
+          description: Host bridge
+          product: VX900 APIC and Central Traffic Control
+          vendor: VIA Technologies, Inc.
+          physical id: 105
+          bus info: pci@0000:00:00.5
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:6
+          description: Host bridge
+          product: VX900 Scratch Registers
+          vendor: VIA Technologies, Inc.
+          physical id: 106
+          bus info: pci@0000:00:00.6
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:7
+          description: Host bridge
+          product: VX900 North-South Module Interface Control
+          vendor: VIA Technologies, Inc.
+          physical id: 107
+          bus info: pci@0000:00:00.7
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:8
+          description: Host bridge
+          product: VIA Technologies, Inc.
+          vendor: VIA Technologies, Inc.
+          physical id: 108
+          bus info: pci@0000:00:03.4
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:9
+          description: Host bridge
+          product: VX8xx South-North Module Interface Control
+          vendor: VIA Technologies, Inc.
+          physical id: 109
+          bus info: pci@0000:00:11.7
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+          configuration: latency=8
+     *-scsi:0
+          physical id: 2
+          logical name: scsi0
+          capabilities: emulated
+        *-disk
+             description: ATA Disk
+             product: TS16GCFX300
+             physical id: 0.0.0
+             bus info: scsi@0:0.0.0
+             logical name: /dev/sda
+             version: 2012
+             serial: 20120704A24765143022
+             size: 14GiB (15GB)
+             capabilities: partitioned partitioned:dos
+             configuration: ansiversion=5 sectorsize=512 signature=0003967b
+           *-volume:0
+                description: Linux filesystem partition
+                vendor: Linux
+                physical id: 1
+                bus info: scsi@0:0.0.0,1
+                logical name: /dev/sda1
+                logical name: /boot
+                version: 1.0
+                serial: 6f75f2b1-5d49-45fc-b2d0-b3fdd521f1e6
+                size: 243MiB
+                capacity: 243MiB
+                capabilities: primary bootable ext2 initialized
+                configuration: filesystem=ext2 modified=2014-03-16 09:35:11 mount.fstype=ext2 mount.options=rw,relatime,errors=continue state=mounted
+           *-volume:1
+                description: Extended partition
+                physical id: 2
+                bus info: scsi@0:0.0.0,2
+                logical name: /dev/sda2
+                size: 14GiB
+                capacity: 14GiB
+                capabilities: primary extended partitioned partitioned:extended
+              *-logicalvolume
+                   description: Linux LVM Physical Volume partition
+                   physical id: 5
+                   logical name: /dev/sda5
+                   serial: r9Yhx1-slQE-I6S9-8qwN-KYG2-kNeP-f3zHDT
+                   size: 14GiB
+                   capacity: 14GiB
+                   capabilities: multi lvm2
+     *-scsi:1
+          physical id: 3
+          bus info: usb@1:6
+          logical name: scsi5
+          capabilities: emulated scsi-host
+          configuration: driver=usb-storage
+        *-cdrom
+             description: SCSI CD-ROM
+             physical id: 0.0.0
+             bus info: scsi@5:0.0.0
+             logical name: /dev/cdrom1
+             logical name: /dev/sr0
+             capabilities: audio partitioned partitioned:mac
+             configuration: status=ready
+           *-volume:0 UNCLAIMED
+                description: Apple partition map
+                physical id: 1
+                bus info: scsi@5:0.0.0,1
+                capacity: 17KiB
+           *-volume:1 UNCLAIMED
+                description: Apple HFS
+                vendor: Mac OS X
+                physical id: 2
+                bus info: scsi@5:0.0.0,2
+                version: 4
+                serial: 00000000-0000-0000-0000-000000001000
+                size: 25MiB
+                capacity: 25MiB
+                capabilities: hfsplus initialized
+                configuration: checked=1904-01-01 02:37:08 created=2012-09-03 11:24:43 filesystem=hfsplus lastmountedby=10.0 modified=2012-09-03 14:29:02 state=clean
+        *-disk
+             description: SCSI Disk
+             physical id: 0.0.1
+             bus info: scsi@5:0.0.1
+             logical name: /dev/sdb
+             configuration: sectorsize=512
+  *-network
+       description: Wireless interface
+       physical id: 1
+       bus info: usb@1:7
+       logical name: wlan0
+       serial: 00:12:7b:64:33:01
+       capabilities: ethernet physical wireless
+       configuration: broadcast=yes driver=ath9k_htc driverversion=3.8.0-26-generic firmware=1.3 link=yes multicast=yes wireless=IEEE 802.11bgn

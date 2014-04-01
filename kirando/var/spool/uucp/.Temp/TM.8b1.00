@@ -1,0 +1,27 @@
+/* trying to move from my embryonic forms system to the new one */
+.output forms_form_backup.sql
+.mode insert
+select * from forms_form;
+delete from forms_form;
+
+.output forms_field_backup.sql
+.mode insert
+select * from forms_field;
+delete from forms_field;
+
+/* one dummy form  so my form id's match */
+insert into forms_form (title,slug,status,intro,button_text,response,login_required,send_email, email_from,email_copies,email_subject, email_message)
+select 'dummy' as title, 'dummy' as slug, 2 as status,'need intro' as intro,'submit' as button_text,'' as response,0 as login_required,0 as send_email, '' as email_from, '' as email_copies, '' as email_subject,
+'' as email_message;
+
+insert into forms_form (title,slug,status,intro,button_text,response,login_required,send_email, email_from,email_copies,email_subject, email_message)
+select title as title, url as slug, 2 as status,'need intro' as intro,'submit' as button_text,'' as response,0 as login_required,0 as send_email, '' as email_from, '' as email_copies, '' as email_subject,
+'' as email_message   from lake_clinicform order by id;
+
+
+insert into forms_field (label,slug,field_type,required,visible,choices,"default",placeholder_text,help_text,form_id)
+select label, field_name as slug, 1 as field_type, 0 as required, 1 as visible, '' as choices, '' as "default", 'placeholder text' as placeholder_text, help_message as help_text, clinicform_id as form_id from lake_clinicformelement order by clinicform_id,sort_order;
+
+
+
+
