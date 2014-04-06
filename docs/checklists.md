@@ -86,29 +86,59 @@ Make a Call and check that the Server is not rebooting due to insufficient curre
 ![](/docs/img/power.png)
 
 
-
 ### Server System
 
- * 
-  * Trigger UUCP file transfer. Observe shutdown.
+ * Access https://www.health 
+
+![](/docs/img/please_login.png)
+
+ * Enter valid credentials
+
+![](/docs/img/login.png)
+
+ * You should see the home page
+
+![](/docs/img/home.png)
 
 ### 3G System
 
-
- * Radio System
- * Server System
- * 3G System
+TBD.
 
 ## Diagnostic Checklists
+
+### Automated System Diagnostic
+
+  * Connect the iilab-maintenance usb system to a laptop.
+  * Install VirtualBox
+  * Install Vagrant
+  * Open the Command Line
+  * Change the directory to the USB drive 
+
+``` 
+cd e:\iilab-maintenace
+```
+
+  * Start the maintenance virtual machine.
+
+```
+vagrant up
+```
+
+  * Execute diagnostic script
+  
+```
+vagrant ssh -c "ansible-playbook -i production site.yml -t diagnose -C"
+```
 
 ### Power System
 
  * Use Putty to connect to the Server.
  * Insert the flash drive.
  * Mount the flash drive
-> sudo mkdir /media/usb
-> sudo mount -t vfat /dev/sdb1 /media/usb
-
+```
+sudo mkdir /media/usb
+sudo mount -t vfat /dev/sdb1 /media/usb
+```
  * Execute script
  * /media/usb/ltfhc-system/scripts/solar.py
 
@@ -139,10 +169,75 @@ Make a Call and check that the Server is not rebooting due to insufficient curre
 
   * Trigger UUCP file transfer.
 
-
-
 ### 3G System
-  * 3G (check credits)
+
+  * Check USB port
+
+```
+$lsusb
+Bus 001 Device 005: ID 19d2:0042 ZTE WCDMA Technologies MSM 
+Bus 001 Device 003: ID 040d:3801 VIA Technologies, Inc. 
+Bus 001 Device 004: ID 1410:a023 Novatel Wireless 
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 002 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+Bus 003 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+Bus 004 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+Bus 005 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+```
+
+  * Check mounted device id
+
+```
+ls -la /dev/serial/by-id/
+total 0
+drwxr-xr-x 2 root root 160 Apr  5 12:14 .
+drwxr-xr-x 4 root root  80 Apr  5 12:14 ..
+lrwxrwxrwx 1 root root  13 Apr  5 12:14 usb-Foxconn_Novatel_Wireless_Gobi3000-if01-port0 -> ../../ttyUSB0
+lrwxrwxrwx 1 root root  13 Apr  5 12:14 usb-Foxconn_Novatel_Wireless_Gobi3000-if02-port0 -> ../../ttyUSB1
+lrwxrwxrwx 1 root root  13 Apr  5 12:14 usb-Foxconn_Novatel_Wireless_Gobi3000-if03-port0 -> ../../ttyUSB2
+lrwxrwxrwx 1 root root  13 Apr  5 12:14 usb-ZTE_Incorporated_ZTE_WCDMA_Technologies_MSM_MF1900ZTED010000-if00-port0 -> ../../ttyUSB3
+lrwxrwxrwx 1 root root  13 Apr  5 12:14 usb-ZTE_Incorporated_ZTE_WCDMA_Technologies_MSM_MF1900ZTED010000-if01-port0 -> ../../ttyUSB4
+lrwxrwxrwx 1 root root  13 Apr  5 12:14 usb-ZTE_Incorporated_ZTE_WCDMA_Technologies_MSM_MF1900ZTED010000-if03-port0 -> ../../ttyUSB5
+
+```
+ * Check on auto up 
+ 
+```
+auto ppp0
+iface ppp0 inet ppp
+        provider airtel
+```
+        
+ * Check on peers
+
+```
+$ more /etc/ppp/peers/airtel
+file /etc/ppp/options.mobile
+connect "/usr/sbin/chat -v -t15 -f /etc/chatscripts/mobile-modem"
+```
+
+ * Check on /etc/ppp/options.mobile 
+ 
+Should be:
+```
+$ more /etc/ppp/options.mobile
+/dev/serial/by-id/usb-ZTE_Incorporated_ZTE_WCDMA_Technologies_MSM_MF1900ZTED010000-if03-port0
+115200
+lock
+crtscts
+modem
+passive
+novj
+defaultroute
+noipdefault
+usepeerdns
+noauth
+hide-password
+persist
+holdoff 10
+maxfail 0
+debug
+```
 
 ## Troubleshooting Checklists
 
