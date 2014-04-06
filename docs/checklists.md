@@ -90,16 +90,45 @@ Make a Call and check that the Server is not rebooting due to insufficient curre
 
  * Access https://www.health 
 
+![](/docs/img/please_login.png)
 
+ * Enter valid credentials
+
+![](/docs/img/login.png)
+
+ * You should see the home page
+
+![](/docs/img/home.png)
 
 ### 3G System
 
-
- * Radio System
- * Server System
- * 3G System
+TBD.
 
 ## Diagnostic Checklists
+
+### Automated System Diagnostic
+
+  * Connect the iilab-maintenance usb system to a laptop.
+  * Install VirtualBox
+  * Install Vagrant
+  * Open the Command Line
+  * Change the directory to the USB drive 
+
+``` 
+cd e:\iilab-maintenace
+```
+
+  * Start the maintenance virtual machine.
+
+```
+vagrant up
+```
+
+  * Execute diagnostic script
+  
+```
+vagrant ssh -c "ansible-playbook -i production site.yml -t diagnose -C"
+```
 
 ### Power System
 
@@ -208,30 +237,6 @@ persist
 holdoff 10
 maxfail 0
 debug
-```
-
-### Automated System Diagnostic
-
-  * Connect the iilab-maintenance usb system to a laptop.
-  * Install VirtualBox
-  * Install Vagrant
-  * Open the Command Line
-  * Change the directory to the USB drive 
-
-``` 
-cd e:\iilab-maintenace
-```
-
-  * Start the maintenance virtual machine.
-
-```
-vagrant up
-```
-
-  * Execute diagnostic script
-  
-```
-vagrant ssh -c "ansible-playbook -i production site.yml -t diagnose -C"
 ```
 
 ## Troubleshooting Checklists
