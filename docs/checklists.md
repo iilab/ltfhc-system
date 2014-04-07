@@ -6,7 +6,8 @@
  * Radio - Diagnostic
    * Run Diagnostic Call to Kirando / Izinga / Kasovu / Namansi
  * 3G - Diagnostic
- * 3G - Troubleshooting 
+ * 3G - Troubleshooting
+    * Possibly switch With Kigoma/Namansi spare.
 
 ## Kirando Checklist
 
@@ -108,14 +109,13 @@ TBD.
 
 ### Automated System Diagnostic
 
-  * Connect the iilab-maintenance usb system to a laptop.
-  * Install VirtualBox
-  * Install Vagrant
-  * Open the Command Line
-  * Change the directory to the USB drive 
+  * Insert the maintenance usb disk to a laptop.
+  * copy the ltfhc-maintenance folder to your laptop's hard drive (in C:\ltfhc-maintenance)
+  * Double click on install.bat (to install VirtualBox, Vagrant, OpenSSH)
+  * Install the maintenance virtual machine.
 
-``` 
-cd e:\iilab-maintenace
+```
+vagrant box add ltfhc-maintenance package.box
 ```
 
   * Start the maintenance virtual machine.
